@@ -1,0 +1,1196 @@
+{
+  "form": "<form autocomplete=\"off\" novalidate=\"novalidate\" class=\"or clearfix\" dir=\"ltr\" data-form-id=\"CGNF__DISCHARGE_FORM\">\n<!--This form was created by transforming an ODK/OpenRosa-flavored (X)Form using an XSL stylesheet created by Enketo LLC.--><section class=\"form-logo\"></section><h3 dir=\"auto\" id=\"form-title\">CGNF Discharge Form</h3>\n  \n  \n    <section class=\"or-group or-appearance-compact \" name=\"/CGNF_Discharge_Form/METADATA\"><h4><span lang=\"\" class=\"question-label active\">Metadata</span></h4><label class=\"question non-select or-appearance-autocomplete \"><span lang=\"\" class=\"question-label active\">Date/time:</span><span class=\"required\">*</span><input type=\"datetime-local\" name=\"/CGNF_Discharge_Form/METADATA/SURVEY_DATETIME\" data-required=\"true()\" data-calculate=\"now()\" data-type-xml=\"dateTime\"><span class=\"or-required-msg active\" lang=\"\" data-i18n=\"constraint.required\">This field is required</span></label><label class=\"question or-appearance-autocomplete \"><span lang=\"\" class=\"question-label active\">Project Type:</span><span class=\"required\">*</span><span lang=\"\" class=\"or-hint active\">Select the appropriate project type.</span><input name=\"/CGNF_Discharge_Form/METADATA/PROJ_TYPE\" data-name=\"/CGNF_Discharge_Form/METADATA/PROJ_TYPE\" data-required=\"true()\" data-type-xml=\"select1\" type=\"text\" list=\"CGNFDischargeFormMETADATAPROJTYPE\"><datalist id=\"CGNFDischargeFormMETADATAPROJTYPE\"><option value=\"\">...</option><option value=\"Wetted_Perimeter\">Wetted Perimeter</option><option value=\"Fish_Restoration\">Fish Restoration</option><option value=\"Structure_Design\">Structure Design</option><option value=\"Stream_Restoration\">Stream Restoration</option><option value=\"Water_Quality\">Water Quality</option><option value=\"other\">Other</option></datalist><span class=\"or-option-translations\" style=\"display:none;\">\n                </span><span class=\"or-required-msg active\" lang=\"\" data-i18n=\"constraint.required\">This field is required</span></label><label class=\"question or-branch pre-init non-select \"><span lang=\"\" class=\"question-label active\">Specify other.</span><input type=\"text\" name=\"/CGNF_Discharge_Form/METADATA/PROJ_TYPE_other\" data-relevant=\"selected(../PROJ_TYPE, 'other')\" data-type-xml=\"string\"></label><fieldset class=\"question simple-select or-branch pre-init  type-singleChoice\"><fieldset><legend><span lang=\"\" class=\"question-label active\">Wetted P Visit:</span><span class=\"required\">*</span>\n                    </legend><div class=\"option-wrapper\"><label class=\"\"><input type=\"radio\" name=\"/CGNF_Discharge_Form/METADATA/WETP_VISIT\" data-name=\"/CGNF_Discharge_Form/METADATA/WETP_VISIT\" value=\"High\" data-required=\"true()\" data-relevant=\" /CGNF_Discharge_Form/METADATA/PROJ_TYPE ='Wetted_Perimeter'\" data-type-xml=\"select1\">\n      <i class=\"webform-svg-icon radio\"><svg width=\"24\" height=\"24\" xmlns=\"http://www.w3.org/2000/svg\">\n  <g>\n    <path class=\"background\" fill=\"#000\" fill-rule=\"evenodd\" d=\"M12 0c6.627 0 12 5.373 12 12s-5.373 12-12 12S0 18.627 0 12 5.373 0 12 0zm0 3a9 9 0 100 18 9 9 0 000-18z\"></path>\n    <path class=\"checkmark\" fill=\"#000\" fill-rule=\"evenodd\" d=\"M12 6a6 6 0 110 12 6 6 0 010-12z\"></path>\n  </g>\n</svg></i>\n    <span lang=\"\" class=\"option-label active\">High</span></label><label class=\"\"><input type=\"radio\" name=\"/CGNF_Discharge_Form/METADATA/WETP_VISIT\" data-name=\"/CGNF_Discharge_Form/METADATA/WETP_VISIT\" value=\"Flow\" data-required=\"true()\" data-relevant=\" /CGNF_Discharge_Form/METADATA/PROJ_TYPE ='Wetted_Perimeter'\" data-type-xml=\"select1\">\n      <i class=\"webform-svg-icon radio\"><svg width=\"24\" height=\"24\" xmlns=\"http://www.w3.org/2000/svg\">\n  <g>\n    <path class=\"background\" fill=\"#000\" fill-rule=\"evenodd\" d=\"M12 0c6.627 0 12 5.373 12 12s-5.373 12-12 12S0 18.627 0 12 5.373 0 12 0zm0 3a9 9 0 100 18 9 9 0 000-18z\"></path>\n    <path class=\"checkmark\" fill=\"#000\" fill-rule=\"evenodd\" d=\"M12 6a6 6 0 110 12 6 6 0 010-12z\"></path>\n  </g>\n</svg></i>\n    <span lang=\"\" class=\"option-label active\">Flow</span></label><label class=\"\"><input type=\"radio\" name=\"/CGNF_Discharge_Form/METADATA/WETP_VISIT\" data-name=\"/CGNF_Discharge_Form/METADATA/WETP_VISIT\" value=\"Mid\" data-required=\"true()\" data-relevant=\" /CGNF_Discharge_Form/METADATA/PROJ_TYPE ='Wetted_Perimeter'\" data-type-xml=\"select1\">\n      <i class=\"webform-svg-icon radio\"><svg width=\"24\" height=\"24\" xmlns=\"http://www.w3.org/2000/svg\">\n  <g>\n    <path class=\"background\" fill=\"#000\" fill-rule=\"evenodd\" d=\"M12 0c6.627 0 12 5.373 12 12s-5.373 12-12 12S0 18.627 0 12 5.373 0 12 0zm0 3a9 9 0 100 18 9 9 0 000-18z\"></path>\n    <path class=\"checkmark\" fill=\"#000\" fill-rule=\"evenodd\" d=\"M12 6a6 6 0 110 12 6 6 0 010-12z\"></path>\n  </g>\n</svg></i>\n    <span lang=\"\" class=\"option-label active\">Mid</span></label></div></fieldset><span class=\"or-required-msg active\" lang=\"\" data-i18n=\"constraint.required\">This field is required</span></fieldset><label class=\"question non-select or-appearance-predictivetext \"><span lang=\"\" class=\"question-label active\">Water Name:</span><span class=\"required\">*</span><input type=\"text\" name=\"/CGNF_Discharge_Form/METADATA/SITE_NAME\" data-required=\"true()\" data-type-xml=\"string\"><span class=\"or-required-msg active\" lang=\"\" data-i18n=\"constraint.required\">This field is required</span></label><label class=\"question or-appearance-autocomplete \"><span lang=\"\" class=\"question-label active\">District:</span><span class=\"required\">*</span><span lang=\"\" class=\"or-hint active\">Select the appropriate Ranger District or \"NA\" for off forest.</span><input name=\"/CGNF_Discharge_Form/METADATA/DISTRICT\" data-name=\"/CGNF_Discharge_Form/METADATA/DISTRICT\" data-required=\"true()\" data-type-xml=\"select1\" type=\"text\" list=\"CGNFDischargeFormMETADATADISTRICT\"><datalist id=\"CGNFDischargeFormMETADATADISTRICT\"><option value=\"\">...</option><option value=\"Ashland\">Ashland</option><option value=\"Beartooth\">Beartooth</option><option value=\"Bozeman\">Bozeman</option><option value=\"Gardiner\">Gardiner</option><option value=\"Hebgen_Lake\">Hebgen Lake</option><option value=\"Sioux\">Sioux</option><option value=\"Yellowstone\">Yellowstone</option><option value=\"NA\">NA - Off Forest</option></datalist><span class=\"or-option-translations\" style=\"display:none;\">\n                </span><span class=\"or-required-msg active\" lang=\"\" data-i18n=\"constraint.required\">This field is required</span></label><label class=\"question non-select or-appearance-predictivetext \"><span lang=\"\" class=\"question-label active\">Observers:</span><span class=\"required\">*</span><span lang=\"\" class=\"or-hint active\">Enter the first initial of the first name and the full last name, followed by a comma for multiple observers ; e.g, sbear, wowl, etc.</span><input type=\"text\" name=\"/CGNF_Discharge_Form/METADATA/OBSERVERS\" data-required=\"true()\" data-type-xml=\"string\"><span class=\"or-required-msg active\" lang=\"\" data-i18n=\"constraint.required\">This field is required</span></label><label class=\"question or-appearance-autocomplete \"><span lang=\"\" class=\"question-label active\">Flow Meter Type:</span><span class=\"required\">*</span><span lang=\"\" class=\"or-hint active\">Select the appropropriate flow meter type.</span><input name=\"/CGNF_Discharge_Form/METADATA/FLOW_METER_TYPE\" data-name=\"/CGNF_Discharge_Form/METADATA/FLOW_METER_TYPE\" data-required=\"true()\" data-type-xml=\"select1\" type=\"text\" list=\"CGNFDischargeFormMETADATAFLOWMETERTYPE\"><datalist id=\"CGNFDischargeFormMETADATAFLOWMETERTYPE\"><option value=\"\">...</option><option value=\"Marsh_McBirney\">Marsh McBirney</option><option value=\"Price_AA\">Price AA</option><option value=\"Pygmy\">Pygmy</option><option value=\"Swoffer\">Swoffer</option></datalist><span class=\"or-option-translations\" style=\"display:none;\">\n                </span><span class=\"or-required-msg active\" lang=\"\" data-i18n=\"constraint.required\">This field is required</span></label><label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">GPS location:</span><input type=\"text\" name=\"/CGNF_Discharge_Form/METADATA/SRV_GPS_LOCAT\" data-type-xml=\"geopoint\"></label><label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">GPS accuracy (m):</span><input type=\"text\" name=\"/CGNF_Discharge_Form/METADATA/GPS_ACCURACY\" data-required=\"true()\" data-calculate=\"pulldata(&quot;@geopoint&quot;,  /CGNF_Discharge_Form/METADATA/SRV_GPS_LOCAT , &quot;horizontalAccuracy&quot;)\" data-type-xml=\"string\" readonly=\"\"><span class=\"or-required-msg active\" lang=\"\" data-i18n=\"constraint.required\">This field is required</span></label><label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Latitude (decimal degrees):</span><input type=\"text\" name=\"/CGNF_Discharge_Form/METADATA/GPS_LATDD\" data-required=\"true()\" data-calculate=\"pulldata(&quot;@geopoint&quot;,  /CGNF_Discharge_Form/METADATA/SRV_GPS_LOCAT , &quot;y&quot;)\" data-type-xml=\"string\" readonly=\"\"><span class=\"or-required-msg active\" lang=\"\" data-i18n=\"constraint.required\">This field is required</span></label><label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Longitude (decimal degrees):</span><input type=\"text\" name=\"/CGNF_Discharge_Form/METADATA/GPS_LONGDD\" data-required=\"true()\" data-calculate=\"pulldata(&quot;@geopoint&quot;,  /CGNF_Discharge_Form/METADATA/SRV_GPS_LOCAT , &quot;x&quot;)\" data-type-xml=\"string\" readonly=\"\"><span class=\"or-required-msg active\" lang=\"\" data-i18n=\"constraint.required\">This field is required</span></label><label class=\"question non-select  type-number\"><span lang=\"\" class=\"question-label active\">Left Edge of Water:</span><span class=\"required\">*</span><span lang=\"\" class=\"or-hint active\">determined by looking downstream, measured to nearest tenth of a foot; e.g. 2.1</span><input type=\"number\" name=\"/CGNF_Discharge_Form/METADATA/LEW\" data-required=\"true()\" data-type-xml=\"decimal\" step=\"any\"><i class=\"webform-svg-icon\"><svg width=\"16\" height=\"16\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10.815 8.894c.07.244.104.504.104.782 0 .452-.073.84-.22 1.163a3.05 3.05 0 01-.584.862c-.242.252-.517.48-.824.684-.307.204-.616.406-.928.607-.311.2-.614.415-.908.645-.294.23-.553.498-.778.804h4.294V16H4.302c0-.52.076-.97.227-1.354.152-.383.357-.726.617-1.029a5.36 5.36 0 01.914-.836c.35-.256.72-.516 1.11-.78.199-.136.41-.274.635-.415.225-.14.43-.296.617-.466a2.49 2.49 0 00.467-.575 1.41 1.41 0 00.188-.728c0-.434-.128-.773-.383-1.016-.255-.242-.582-.364-.98-.364-.268 0-.495.062-.68.186a1.39 1.39 0 00-.448.485 2.19 2.19 0 00-.24.664 3.746 3.746 0 00-.072.722H4.51a4.229 4.229 0 01.182-1.424 3.3 3.3 0 01.622-1.15 2.818 2.818 0 011.045-.767c.42-.183.901-.274 1.446-.274.416 0 .811.064 1.188.191.148.05.29.11.424.178a3.677 3.677 0 01-.164-1.205h1.752c.009.238.048.466.117.683.069.217.168.404.298.562.13.158.292.283.487.377.194.094.426.14.694.14.415 0 .765-.125 1.05-.376.286-.252.429-.594.429-1.029 0-.34-.067-.6-.201-.78a1.151 1.151 0 00-.513-.389 2.174 2.174 0 00-.68-.14 13.51 13.51 0 00-.708-.02V3.795c.199.017.41.017.636 0 .225-.017.434-.066.629-.147.195-.08.355-.198.48-.351.125-.153.188-.358.188-.613 0-.384-.13-.677-.389-.882a1.406 1.406 0 00-.895-.306c-.467 0-.82.15-1.058.453-.237.303-.352.684-.343 1.144H9.474c.017-.46.102-.88.253-1.259a2.85 2.85 0 01.636-.977 2.82 2.82 0 01.98-.632A3.46 3.46 0 0112.612 0c.364 0 .727.053 1.09.16.364.106.69.266.98.479.29.213.526.472.707.779.182.307.273.66.273 1.06 0 .435-.106.818-.318 1.15-.212.332-.53.558-.954.677v.026c.502.11.895.349 1.18.715.286.366.429.805.429 1.316 0 .468-.093.886-.279 1.252a2.742 2.742 0 01-.746.92c-.311.247-.67.434-1.077.562-.406.127-.83.191-1.271.191-.51 0-.975-.072-1.395-.217a3.283 3.283 0 01-.417-.176zm-6.69 4.158V4.11H2.66c-.052.34-.16.626-.325.855a1.95 1.95 0 01-.603.556 2.45 2.45 0 01-.804.294 4.428 4.428 0 01-.928.07v1.367h2.283v5.8h1.843z\" fill=\"#000\" fill-rule=\"evenodd\"></path></svg></i><span class=\"or-required-msg active\" lang=\"\" data-i18n=\"constraint.required\">This field is required</span></label><label class=\"question non-select  type-number\"><span lang=\"\" class=\"question-label active\">Right Edge of Water:</span><span class=\"required\">*</span><span lang=\"\" class=\"or-hint active\">determined by looking downstream, measured to nearest tenth of a foot; e.g. 10.2</span><input type=\"number\" name=\"/CGNF_Discharge_Form/METADATA/REW\" data-required=\"true()\" data-type-xml=\"decimal\" step=\"any\"><i class=\"webform-svg-icon\"><svg width=\"16\" height=\"16\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10.815 8.894c.07.244.104.504.104.782 0 .452-.073.84-.22 1.163a3.05 3.05 0 01-.584.862c-.242.252-.517.48-.824.684-.307.204-.616.406-.928.607-.311.2-.614.415-.908.645-.294.23-.553.498-.778.804h4.294V16H4.302c0-.52.076-.97.227-1.354.152-.383.357-.726.617-1.029a5.36 5.36 0 01.914-.836c.35-.256.72-.516 1.11-.78.199-.136.41-.274.635-.415.225-.14.43-.296.617-.466a2.49 2.49 0 00.467-.575 1.41 1.41 0 00.188-.728c0-.434-.128-.773-.383-1.016-.255-.242-.582-.364-.98-.364-.268 0-.495.062-.68.186a1.39 1.39 0 00-.448.485 2.19 2.19 0 00-.24.664 3.746 3.746 0 00-.072.722H4.51a4.229 4.229 0 01.182-1.424 3.3 3.3 0 01.622-1.15 2.818 2.818 0 011.045-.767c.42-.183.901-.274 1.446-.274.416 0 .811.064 1.188.191.148.05.29.11.424.178a3.677 3.677 0 01-.164-1.205h1.752c.009.238.048.466.117.683.069.217.168.404.298.562.13.158.292.283.487.377.194.094.426.14.694.14.415 0 .765-.125 1.05-.376.286-.252.429-.594.429-1.029 0-.34-.067-.6-.201-.78a1.151 1.151 0 00-.513-.389 2.174 2.174 0 00-.68-.14 13.51 13.51 0 00-.708-.02V3.795c.199.017.41.017.636 0 .225-.017.434-.066.629-.147.195-.08.355-.198.48-.351.125-.153.188-.358.188-.613 0-.384-.13-.677-.389-.882a1.406 1.406 0 00-.895-.306c-.467 0-.82.15-1.058.453-.237.303-.352.684-.343 1.144H9.474c.017-.46.102-.88.253-1.259a2.85 2.85 0 01.636-.977 2.82 2.82 0 01.98-.632A3.46 3.46 0 0112.612 0c.364 0 .727.053 1.09.16.364.106.69.266.98.479.29.213.526.472.707.779.182.307.273.66.273 1.06 0 .435-.106.818-.318 1.15-.212.332-.53.558-.954.677v.026c.502.11.895.349 1.18.715.286.366.429.805.429 1.316 0 .468-.093.886-.279 1.252a2.742 2.742 0 01-.746.92c-.311.247-.67.434-1.077.562-.406.127-.83.191-1.271.191-.51 0-.975-.072-1.395-.217a3.283 3.283 0 01-.417-.176zm-6.69 4.158V4.11H2.66c-.052.34-.16.626-.325.855a1.95 1.95 0 01-.603.556 2.45 2.45 0 01-.804.294 4.428 4.428 0 01-.928.07v1.367h2.283v5.8h1.843z\" fill=\"#000\" fill-rule=\"evenodd\"></path></svg></i><span class=\"or-required-msg active\" lang=\"\" data-i18n=\"constraint.required\">This field is required</span></label><label class=\"question non-select or-appearance-minimal  type-number\"><span lang=\"\" class=\"question-label active\">Measurement Interval:</span><span lang=\"\" class=\"or-hint active\">Use as a guide to determine an appropriate measurement interval (channel width/20). As a general rule, the measurement interval width should decrease with increased depth or velocity, and increase with decreased depth or velocity. An increase of 25% in depth or velocity would cause a 50% decrease in the measurement interval. A minimum of 20 measurements (maximum of 35) should be collected for channels with a width of 5 feet or greater.</span><input type=\"number\" name=\"/CGNF_Discharge_Form/METADATA/MEAS_INTERVAL\" data-calculate=\"round( /CGNF_Discharge_Form/SUMMARY/STREAM_WIDTH  div 20, 2)\" data-type-xml=\"decimal\" step=\"any\"><i class=\"webform-svg-icon\"><svg width=\"16\" height=\"16\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10.815 8.894c.07.244.104.504.104.782 0 .452-.073.84-.22 1.163a3.05 3.05 0 01-.584.862c-.242.252-.517.48-.824.684-.307.204-.616.406-.928.607-.311.2-.614.415-.908.645-.294.23-.553.498-.778.804h4.294V16H4.302c0-.52.076-.97.227-1.354.152-.383.357-.726.617-1.029a5.36 5.36 0 01.914-.836c.35-.256.72-.516 1.11-.78.199-.136.41-.274.635-.415.225-.14.43-.296.617-.466a2.49 2.49 0 00.467-.575 1.41 1.41 0 00.188-.728c0-.434-.128-.773-.383-1.016-.255-.242-.582-.364-.98-.364-.268 0-.495.062-.68.186a1.39 1.39 0 00-.448.485 2.19 2.19 0 00-.24.664 3.746 3.746 0 00-.072.722H4.51a4.229 4.229 0 01.182-1.424 3.3 3.3 0 01.622-1.15 2.818 2.818 0 011.045-.767c.42-.183.901-.274 1.446-.274.416 0 .811.064 1.188.191.148.05.29.11.424.178a3.677 3.677 0 01-.164-1.205h1.752c.009.238.048.466.117.683.069.217.168.404.298.562.13.158.292.283.487.377.194.094.426.14.694.14.415 0 .765-.125 1.05-.376.286-.252.429-.594.429-1.029 0-.34-.067-.6-.201-.78a1.151 1.151 0 00-.513-.389 2.174 2.174 0 00-.68-.14 13.51 13.51 0 00-.708-.02V3.795c.199.017.41.017.636 0 .225-.017.434-.066.629-.147.195-.08.355-.198.48-.351.125-.153.188-.358.188-.613 0-.384-.13-.677-.389-.882a1.406 1.406 0 00-.895-.306c-.467 0-.82.15-1.058.453-.237.303-.352.684-.343 1.144H9.474c.017-.46.102-.88.253-1.259a2.85 2.85 0 01.636-.977 2.82 2.82 0 01.98-.632A3.46 3.46 0 0112.612 0c.364 0 .727.053 1.09.16.364.106.69.266.98.479.29.213.526.472.707.779.182.307.273.66.273 1.06 0 .435-.106.818-.318 1.15-.212.332-.53.558-.954.677v.026c.502.11.895.349 1.18.715.286.366.429.805.429 1.316 0 .468-.093.886-.279 1.252a2.742 2.742 0 01-.746.92c-.311.247-.67.434-1.077.562-.406.127-.83.191-1.271.191-.51 0-.975-.072-1.395-.217a3.283 3.283 0 01-.417-.176zm-6.69 4.158V4.11H2.66c-.052.34-.16.626-.325.855a1.95 1.95 0 01-.603.556 2.45 2.45 0 01-.804.294 4.428 4.428 0 01-.928.07v1.367h2.283v5.8h1.843z\" fill=\"#000\" fill-rule=\"evenodd\"></path></svg></i></label><label class=\"question non-select or-appearance-multiline or-appearance-predictivetext \"><span lang=\"\" class=\"question-label active\">Comments:</span><textarea name=\"/CGNF_Discharge_Form/METADATA/COMMENTS\" data-type-xml=\"string\"></textarea></label>\n            </section><!--end of group -->\n    <section class=\"or-group or-appearance-compact \" name=\"/CGNF_Discharge_Form/MEASUREMENTS\"><h4><span lang=\"\" class=\"question-label active\">Discharge Measurements</span></h4><section class=\"or-repeat or-appearance-compact \" name=\"/CGNF_Discharge_Form/MEASUREMENTS\"><label class=\"question non-select  type-number\"><span lang=\"\" class=\"question-label active\">Station:</span><span lang=\"\" class=\"or-hint active\">distance along tape in decimal feet, not inches; e.g., 2.15</span><input type=\"number\" name=\"/CGNF_Discharge_Form/MEASUREMENTS/STATION\" data-type-xml=\"decimal\" step=\"any\"><i class=\"webform-svg-icon\"><svg width=\"16\" height=\"16\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10.815 8.894c.07.244.104.504.104.782 0 .452-.073.84-.22 1.163a3.05 3.05 0 01-.584.862c-.242.252-.517.48-.824.684-.307.204-.616.406-.928.607-.311.2-.614.415-.908.645-.294.23-.553.498-.778.804h4.294V16H4.302c0-.52.076-.97.227-1.354.152-.383.357-.726.617-1.029a5.36 5.36 0 01.914-.836c.35-.256.72-.516 1.11-.78.199-.136.41-.274.635-.415.225-.14.43-.296.617-.466a2.49 2.49 0 00.467-.575 1.41 1.41 0 00.188-.728c0-.434-.128-.773-.383-1.016-.255-.242-.582-.364-.98-.364-.268 0-.495.062-.68.186a1.39 1.39 0 00-.448.485 2.19 2.19 0 00-.24.664 3.746 3.746 0 00-.072.722H4.51a4.229 4.229 0 01.182-1.424 3.3 3.3 0 01.622-1.15 2.818 2.818 0 011.045-.767c.42-.183.901-.274 1.446-.274.416 0 .811.064 1.188.191.148.05.29.11.424.178a3.677 3.677 0 01-.164-1.205h1.752c.009.238.048.466.117.683.069.217.168.404.298.562.13.158.292.283.487.377.194.094.426.14.694.14.415 0 .765-.125 1.05-.376.286-.252.429-.594.429-1.029 0-.34-.067-.6-.201-.78a1.151 1.151 0 00-.513-.389 2.174 2.174 0 00-.68-.14 13.51 13.51 0 00-.708-.02V3.795c.199.017.41.017.636 0 .225-.017.434-.066.629-.147.195-.08.355-.198.48-.351.125-.153.188-.358.188-.613 0-.384-.13-.677-.389-.882a1.406 1.406 0 00-.895-.306c-.467 0-.82.15-1.058.453-.237.303-.352.684-.343 1.144H9.474c.017-.46.102-.88.253-1.259a2.85 2.85 0 01.636-.977 2.82 2.82 0 01.98-.632A3.46 3.46 0 0112.612 0c.364 0 .727.053 1.09.16.364.106.69.266.98.479.29.213.526.472.707.779.182.307.273.66.273 1.06 0 .435-.106.818-.318 1.15-.212.332-.53.558-.954.677v.026c.502.11.895.349 1.18.715.286.366.429.805.429 1.316 0 .468-.093.886-.279 1.252a2.742 2.742 0 01-.746.92c-.311.247-.67.434-1.077.562-.406.127-.83.191-1.271.191-.51 0-.975-.072-1.395-.217a3.283 3.283 0 01-.417-.176zm-6.69 4.158V4.11H2.66c-.052.34-.16.626-.325.855a1.95 1.95 0 01-.603.556 2.45 2.45 0 01-.804.294 4.428 4.428 0 01-.928.07v1.367h2.283v5.8h1.843z\" fill=\"#000\" fill-rule=\"evenodd\"></path></svg></i></label><label class=\"question non-select  type-number\"><span lang=\"\" class=\"question-label active\">Cell Width:</span><span lang=\"\" class=\"or-hint active\">Distance on tape from last vertical point measurement (station) in tenths of feet; e.g., .25</span><input type=\"number\" name=\"/CGNF_Discharge_Form/MEASUREMENTS/CELL_WIDTH\" data-type-xml=\"decimal\" step=\"any\"><i class=\"webform-svg-icon\"><svg width=\"16\" height=\"16\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10.815 8.894c.07.244.104.504.104.782 0 .452-.073.84-.22 1.163a3.05 3.05 0 01-.584.862c-.242.252-.517.48-.824.684-.307.204-.616.406-.928.607-.311.2-.614.415-.908.645-.294.23-.553.498-.778.804h4.294V16H4.302c0-.52.076-.97.227-1.354.152-.383.357-.726.617-1.029a5.36 5.36 0 01.914-.836c.35-.256.72-.516 1.11-.78.199-.136.41-.274.635-.415.225-.14.43-.296.617-.466a2.49 2.49 0 00.467-.575 1.41 1.41 0 00.188-.728c0-.434-.128-.773-.383-1.016-.255-.242-.582-.364-.98-.364-.268 0-.495.062-.68.186a1.39 1.39 0 00-.448.485 2.19 2.19 0 00-.24.664 3.746 3.746 0 00-.072.722H4.51a4.229 4.229 0 01.182-1.424 3.3 3.3 0 01.622-1.15 2.818 2.818 0 011.045-.767c.42-.183.901-.274 1.446-.274.416 0 .811.064 1.188.191.148.05.29.11.424.178a3.677 3.677 0 01-.164-1.205h1.752c.009.238.048.466.117.683.069.217.168.404.298.562.13.158.292.283.487.377.194.094.426.14.694.14.415 0 .765-.125 1.05-.376.286-.252.429-.594.429-1.029 0-.34-.067-.6-.201-.78a1.151 1.151 0 00-.513-.389 2.174 2.174 0 00-.68-.14 13.51 13.51 0 00-.708-.02V3.795c.199.017.41.017.636 0 .225-.017.434-.066.629-.147.195-.08.355-.198.48-.351.125-.153.188-.358.188-.613 0-.384-.13-.677-.389-.882a1.406 1.406 0 00-.895-.306c-.467 0-.82.15-1.058.453-.237.303-.352.684-.343 1.144H9.474c.017-.46.102-.88.253-1.259a2.85 2.85 0 01.636-.977 2.82 2.82 0 01.98-.632A3.46 3.46 0 0112.612 0c.364 0 .727.053 1.09.16.364.106.69.266.98.479.29.213.526.472.707.779.182.307.273.66.273 1.06 0 .435-.106.818-.318 1.15-.212.332-.53.558-.954.677v.026c.502.11.895.349 1.18.715.286.366.429.805.429 1.316 0 .468-.093.886-.279 1.252a2.742 2.742 0 01-.746.92c-.311.247-.67.434-1.077.562-.406.127-.83.191-1.271.191-.51 0-.975-.072-1.395-.217a3.283 3.283 0 01-.417-.176zm-6.69 4.158V4.11H2.66c-.052.34-.16.626-.325.855a1.95 1.95 0 01-.603.556 2.45 2.45 0 01-.804.294 4.428 4.428 0 01-.928.07v1.367h2.283v5.8h1.843z\" fill=\"#000\" fill-rule=\"evenodd\"></path></svg></i></label><label class=\"question non-select  type-number\"><span lang=\"\" class=\"question-label active\">Depth:</span><span lang=\"\" class=\"or-hint active\">depth of water from rod in tenths of feet</span><input type=\"number\" name=\"/CGNF_Discharge_Form/MEASUREMENTS/WATER_DEPTH\" data-type-xml=\"decimal\" step=\"any\"><i class=\"webform-svg-icon\"><svg width=\"16\" height=\"16\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10.815 8.894c.07.244.104.504.104.782 0 .452-.073.84-.22 1.163a3.05 3.05 0 01-.584.862c-.242.252-.517.48-.824.684-.307.204-.616.406-.928.607-.311.2-.614.415-.908.645-.294.23-.553.498-.778.804h4.294V16H4.302c0-.52.076-.97.227-1.354.152-.383.357-.726.617-1.029a5.36 5.36 0 01.914-.836c.35-.256.72-.516 1.11-.78.199-.136.41-.274.635-.415.225-.14.43-.296.617-.466a2.49 2.49 0 00.467-.575 1.41 1.41 0 00.188-.728c0-.434-.128-.773-.383-1.016-.255-.242-.582-.364-.98-.364-.268 0-.495.062-.68.186a1.39 1.39 0 00-.448.485 2.19 2.19 0 00-.24.664 3.746 3.746 0 00-.072.722H4.51a4.229 4.229 0 01.182-1.424 3.3 3.3 0 01.622-1.15 2.818 2.818 0 011.045-.767c.42-.183.901-.274 1.446-.274.416 0 .811.064 1.188.191.148.05.29.11.424.178a3.677 3.677 0 01-.164-1.205h1.752c.009.238.048.466.117.683.069.217.168.404.298.562.13.158.292.283.487.377.194.094.426.14.694.14.415 0 .765-.125 1.05-.376.286-.252.429-.594.429-1.029 0-.34-.067-.6-.201-.78a1.151 1.151 0 00-.513-.389 2.174 2.174 0 00-.68-.14 13.51 13.51 0 00-.708-.02V3.795c.199.017.41.017.636 0 .225-.017.434-.066.629-.147.195-.08.355-.198.48-.351.125-.153.188-.358.188-.613 0-.384-.13-.677-.389-.882a1.406 1.406 0 00-.895-.306c-.467 0-.82.15-1.058.453-.237.303-.352.684-.343 1.144H9.474c.017-.46.102-.88.253-1.259a2.85 2.85 0 01.636-.977 2.82 2.82 0 01.98-.632A3.46 3.46 0 0112.612 0c.364 0 .727.053 1.09.16.364.106.69.266.98.479.29.213.526.472.707.779.182.307.273.66.273 1.06 0 .435-.106.818-.318 1.15-.212.332-.53.558-.954.677v.026c.502.11.895.349 1.18.715.286.366.429.805.429 1.316 0 .468-.093.886-.279 1.252a2.742 2.742 0 01-.746.92c-.311.247-.67.434-1.077.562-.406.127-.83.191-1.271.191-.51 0-.975-.072-1.395-.217a3.283 3.283 0 01-.417-.176zm-6.69 4.158V4.11H2.66c-.052.34-.16.626-.325.855a1.95 1.95 0 01-.603.556 2.45 2.45 0 01-.804.294 4.428 4.428 0 01-.928.07v1.367h2.283v5.8h1.843z\" fill=\"#000\" fill-rule=\"evenodd\"></path></svg></i></label><label class=\"question non-select  type-number\"><span lang=\"\" class=\"question-label active\">Point Velocity:</span><span lang=\"\" class=\"or-hint active\">ft/sec.</span><input type=\"number\" name=\"/CGNF_Discharge_Form/MEASUREMENTS/POINT_VELOCITY\" data-type-xml=\"decimal\" step=\"any\"><i class=\"webform-svg-icon\"><svg width=\"16\" height=\"16\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10.815 8.894c.07.244.104.504.104.782 0 .452-.073.84-.22 1.163a3.05 3.05 0 01-.584.862c-.242.252-.517.48-.824.684-.307.204-.616.406-.928.607-.311.2-.614.415-.908.645-.294.23-.553.498-.778.804h4.294V16H4.302c0-.52.076-.97.227-1.354.152-.383.357-.726.617-1.029a5.36 5.36 0 01.914-.836c.35-.256.72-.516 1.11-.78.199-.136.41-.274.635-.415.225-.14.43-.296.617-.466a2.49 2.49 0 00.467-.575 1.41 1.41 0 00.188-.728c0-.434-.128-.773-.383-1.016-.255-.242-.582-.364-.98-.364-.268 0-.495.062-.68.186a1.39 1.39 0 00-.448.485 2.19 2.19 0 00-.24.664 3.746 3.746 0 00-.072.722H4.51a4.229 4.229 0 01.182-1.424 3.3 3.3 0 01.622-1.15 2.818 2.818 0 011.045-.767c.42-.183.901-.274 1.446-.274.416 0 .811.064 1.188.191.148.05.29.11.424.178a3.677 3.677 0 01-.164-1.205h1.752c.009.238.048.466.117.683.069.217.168.404.298.562.13.158.292.283.487.377.194.094.426.14.694.14.415 0 .765-.125 1.05-.376.286-.252.429-.594.429-1.029 0-.34-.067-.6-.201-.78a1.151 1.151 0 00-.513-.389 2.174 2.174 0 00-.68-.14 13.51 13.51 0 00-.708-.02V3.795c.199.017.41.017.636 0 .225-.017.434-.066.629-.147.195-.08.355-.198.48-.351.125-.153.188-.358.188-.613 0-.384-.13-.677-.389-.882a1.406 1.406 0 00-.895-.306c-.467 0-.82.15-1.058.453-.237.303-.352.684-.343 1.144H9.474c.017-.46.102-.88.253-1.259a2.85 2.85 0 01.636-.977 2.82 2.82 0 01.98-.632A3.46 3.46 0 0112.612 0c.364 0 .727.053 1.09.16.364.106.69.266.98.479.29.213.526.472.707.779.182.307.273.66.273 1.06 0 .435-.106.818-.318 1.15-.212.332-.53.558-.954.677v.026c.502.11.895.349 1.18.715.286.366.429.805.429 1.316 0 .468-.093.886-.279 1.252a2.742 2.742 0 01-.746.92c-.311.247-.67.434-1.077.562-.406.127-.83.191-1.271.191-.51 0-.975-.072-1.395-.217a3.283 3.283 0 01-.417-.176zm-6.69 4.158V4.11H2.66c-.052.34-.16.626-.325.855a1.95 1.95 0 01-.603.556 2.45 2.45 0 01-.804.294 4.428 4.428 0 01-.928.07v1.367h2.283v5.8h1.843z\" fill=\"#000\" fill-rule=\"evenodd\"></path></svg></i></label><label class=\"question non-select  type-number\"><span lang=\"\" class=\"question-label active\">Point Discharge: (read only)</span><input type=\"number\" name=\"/CGNF_Discharge_Form/MEASUREMENTS/POINT_DISCHARGE\" data-calculate=\"round( /CGNF_Discharge_Form/MEASUREMENTS/CELL_WIDTH * /CGNF_Discharge_Form/MEASUREMENTS/WATER_DEPTH * /CGNF_Discharge_Form/MEASUREMENTS/POINT_VELOCITY ,4)\" data-type-xml=\"decimal\" step=\"any\" readonly=\"\"><i class=\"webform-svg-icon\"><svg width=\"16\" height=\"16\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10.815 8.894c.07.244.104.504.104.782 0 .452-.073.84-.22 1.163a3.05 3.05 0 01-.584.862c-.242.252-.517.48-.824.684-.307.204-.616.406-.928.607-.311.2-.614.415-.908.645-.294.23-.553.498-.778.804h4.294V16H4.302c0-.52.076-.97.227-1.354.152-.383.357-.726.617-1.029a5.36 5.36 0 01.914-.836c.35-.256.72-.516 1.11-.78.199-.136.41-.274.635-.415.225-.14.43-.296.617-.466a2.49 2.49 0 00.467-.575 1.41 1.41 0 00.188-.728c0-.434-.128-.773-.383-1.016-.255-.242-.582-.364-.98-.364-.268 0-.495.062-.68.186a1.39 1.39 0 00-.448.485 2.19 2.19 0 00-.24.664 3.746 3.746 0 00-.072.722H4.51a4.229 4.229 0 01.182-1.424 3.3 3.3 0 01.622-1.15 2.818 2.818 0 011.045-.767c.42-.183.901-.274 1.446-.274.416 0 .811.064 1.188.191.148.05.29.11.424.178a3.677 3.677 0 01-.164-1.205h1.752c.009.238.048.466.117.683.069.217.168.404.298.562.13.158.292.283.487.377.194.094.426.14.694.14.415 0 .765-.125 1.05-.376.286-.252.429-.594.429-1.029 0-.34-.067-.6-.201-.78a1.151 1.151 0 00-.513-.389 2.174 2.174 0 00-.68-.14 13.51 13.51 0 00-.708-.02V3.795c.199.017.41.017.636 0 .225-.017.434-.066.629-.147.195-.08.355-.198.48-.351.125-.153.188-.358.188-.613 0-.384-.13-.677-.389-.882a1.406 1.406 0 00-.895-.306c-.467 0-.82.15-1.058.453-.237.303-.352.684-.343 1.144H9.474c.017-.46.102-.88.253-1.259a2.85 2.85 0 01.636-.977 2.82 2.82 0 01.98-.632A3.46 3.46 0 0112.612 0c.364 0 .727.053 1.09.16.364.106.69.266.98.479.29.213.526.472.707.779.182.307.273.66.273 1.06 0 .435-.106.818-.318 1.15-.212.332-.53.558-.954.677v.026c.502.11.895.349 1.18.715.286.366.429.805.429 1.316 0 .468-.093.886-.279 1.252a2.742 2.742 0 01-.746.92c-.311.247-.67.434-1.077.562-.406.127-.83.191-1.271.191-.51 0-.975-.072-1.395-.217a3.283 3.283 0 01-.417-.176zm-6.69 4.158V4.11H2.66c-.052.34-.16.626-.325.855a1.95 1.95 0 01-.603.556 2.45 2.45 0 01-.804.294 4.428 4.428 0 01-.928.07v1.367h2.283v5.8h1.843z\" fill=\"#000\" fill-rule=\"evenodd\"></path></svg></i></label><label class=\"question non-select  type-number\"><span lang=\"\" class=\"question-label active\">Percent of Total Discharge: (read only)</span><span lang=\"\" class=\"or-hint active\">No single discharge measurement should exceed 5% of the total discharge. Review individual discharge records when survey is complete and tap the refresh button in this field to recalculate the percent of total discharge for each record. If the percent total discharge exceeds 5%, collect an additional measurment and adjust the cell widths accordingly.</span><input type=\"number\" name=\"/CGNF_Discharge_Form/MEASUREMENTS/PER_TOTAL_DISCHARGE\" data-calculate=\" /CGNF_Discharge_Form/MEASUREMENTS/PER_TOTAL_DISCHARGE_CALC \" data-type-xml=\"int\"><i class=\"webform-svg-icon\"><svg width=\"16\" height=\"16\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10.815 8.894c.07.244.104.504.104.782 0 .452-.073.84-.22 1.163a3.05 3.05 0 01-.584.862c-.242.252-.517.48-.824.684-.307.204-.616.406-.928.607-.311.2-.614.415-.908.645-.294.23-.553.498-.778.804h4.294V16H4.302c0-.52.076-.97.227-1.354.152-.383.357-.726.617-1.029a5.36 5.36 0 01.914-.836c.35-.256.72-.516 1.11-.78.199-.136.41-.274.635-.415.225-.14.43-.296.617-.466a2.49 2.49 0 00.467-.575 1.41 1.41 0 00.188-.728c0-.434-.128-.773-.383-1.016-.255-.242-.582-.364-.98-.364-.268 0-.495.062-.68.186a1.39 1.39 0 00-.448.485 2.19 2.19 0 00-.24.664 3.746 3.746 0 00-.072.722H4.51a4.229 4.229 0 01.182-1.424 3.3 3.3 0 01.622-1.15 2.818 2.818 0 011.045-.767c.42-.183.901-.274 1.446-.274.416 0 .811.064 1.188.191.148.05.29.11.424.178a3.677 3.677 0 01-.164-1.205h1.752c.009.238.048.466.117.683.069.217.168.404.298.562.13.158.292.283.487.377.194.094.426.14.694.14.415 0 .765-.125 1.05-.376.286-.252.429-.594.429-1.029 0-.34-.067-.6-.201-.78a1.151 1.151 0 00-.513-.389 2.174 2.174 0 00-.68-.14 13.51 13.51 0 00-.708-.02V3.795c.199.017.41.017.636 0 .225-.017.434-.066.629-.147.195-.08.355-.198.48-.351.125-.153.188-.358.188-.613 0-.384-.13-.677-.389-.882a1.406 1.406 0 00-.895-.306c-.467 0-.82.15-1.058.453-.237.303-.352.684-.343 1.144H9.474c.017-.46.102-.88.253-1.259a2.85 2.85 0 01.636-.977 2.82 2.82 0 01.98-.632A3.46 3.46 0 0112.612 0c.364 0 .727.053 1.09.16.364.106.69.266.98.479.29.213.526.472.707.779.182.307.273.66.273 1.06 0 .435-.106.818-.318 1.15-.212.332-.53.558-.954.677v.026c.502.11.895.349 1.18.715.286.366.429.805.429 1.316 0 .468-.093.886-.279 1.252a2.742 2.742 0 01-.746.92c-.311.247-.67.434-1.077.562-.406.127-.83.191-1.271.191-.51 0-.975-.072-1.395-.217a3.283 3.283 0 01-.417-.176zm-6.69 4.158V4.11H2.66c-.052.34-.16.626-.325.855a1.95 1.95 0 01-.603.556 2.45 2.45 0 01-.804.294 4.428 4.428 0 01-.928.07v1.367h2.283v5.8h1.843z\" fill=\"#000\" fill-rule=\"evenodd\"></path></svg></i></label><label class=\"question non-select or-appearance-multiline or-appearance-predictivetext \"><span lang=\"\" class=\"question-label active\">Note:</span><textarea name=\"/CGNF_Discharge_Form/MEASUREMENTS/NOTE\" data-type-xml=\"string\"></textarea></label>\n            </section><div class=\"or-repeat-info\" data-name=\"/CGNF_Discharge_Form/MEASUREMENTS\"></div>\n            </section><!--end of group -->\n    <section class=\"or-group or-appearance-compact \" name=\"/CGNF_Discharge_Form/SUMMARY\"><h4><span lang=\"\" class=\"question-label active\">Summary</span></h4><label class=\"question non-select  type-number\"><span lang=\"\" class=\"question-label active\">Stream Width:</span><input type=\"number\" name=\"/CGNF_Discharge_Form/SUMMARY/STREAM_WIDTH\" data-calculate=\"round( /CGNF_Discharge_Form/METADATA/WDTH_STEP2 ,2)\" data-type-xml=\"decimal\" step=\"any\" readonly=\"\"><i class=\"webform-svg-icon\"><svg width=\"16\" height=\"16\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10.815 8.894c.07.244.104.504.104.782 0 .452-.073.84-.22 1.163a3.05 3.05 0 01-.584.862c-.242.252-.517.48-.824.684-.307.204-.616.406-.928.607-.311.2-.614.415-.908.645-.294.23-.553.498-.778.804h4.294V16H4.302c0-.52.076-.97.227-1.354.152-.383.357-.726.617-1.029a5.36 5.36 0 01.914-.836c.35-.256.72-.516 1.11-.78.199-.136.41-.274.635-.415.225-.14.43-.296.617-.466a2.49 2.49 0 00.467-.575 1.41 1.41 0 00.188-.728c0-.434-.128-.773-.383-1.016-.255-.242-.582-.364-.98-.364-.268 0-.495.062-.68.186a1.39 1.39 0 00-.448.485 2.19 2.19 0 00-.24.664 3.746 3.746 0 00-.072.722H4.51a4.229 4.229 0 01.182-1.424 3.3 3.3 0 01.622-1.15 2.818 2.818 0 011.045-.767c.42-.183.901-.274 1.446-.274.416 0 .811.064 1.188.191.148.05.29.11.424.178a3.677 3.677 0 01-.164-1.205h1.752c.009.238.048.466.117.683.069.217.168.404.298.562.13.158.292.283.487.377.194.094.426.14.694.14.415 0 .765-.125 1.05-.376.286-.252.429-.594.429-1.029 0-.34-.067-.6-.201-.78a1.151 1.151 0 00-.513-.389 2.174 2.174 0 00-.68-.14 13.51 13.51 0 00-.708-.02V3.795c.199.017.41.017.636 0 .225-.017.434-.066.629-.147.195-.08.355-.198.48-.351.125-.153.188-.358.188-.613 0-.384-.13-.677-.389-.882a1.406 1.406 0 00-.895-.306c-.467 0-.82.15-1.058.453-.237.303-.352.684-.343 1.144H9.474c.017-.46.102-.88.253-1.259a2.85 2.85 0 01.636-.977 2.82 2.82 0 01.98-.632A3.46 3.46 0 0112.612 0c.364 0 .727.053 1.09.16.364.106.69.266.98.479.29.213.526.472.707.779.182.307.273.66.273 1.06 0 .435-.106.818-.318 1.15-.212.332-.53.558-.954.677v.026c.502.11.895.349 1.18.715.286.366.429.805.429 1.316 0 .468-.093.886-.279 1.252a2.742 2.742 0 01-.746.92c-.311.247-.67.434-1.077.562-.406.127-.83.191-1.271.191-.51 0-.975-.072-1.395-.217a3.283 3.283 0 01-.417-.176zm-6.69 4.158V4.11H2.66c-.052.34-.16.626-.325.855a1.95 1.95 0 01-.603.556 2.45 2.45 0 01-.804.294 4.428 4.428 0 01-.928.07v1.367h2.283v5.8h1.843z\" fill=\"#000\" fill-rule=\"evenodd\"></path></svg></i></label><label class=\"question non-select  type-number\"><span lang=\"\" class=\"question-label active\">Max Depth:</span><span class=\"required\">*</span><span lang=\"\" class=\"or-hint active\">Enter the max depth in tenths of feet from rod.</span><input type=\"number\" name=\"/CGNF_Discharge_Form/SUMMARY/MAX_DEPTH\" data-required=\"true()\" data-calculate=\"max( /CGNF_Discharge_Form/MEASUREMENTS/WATER_DEPTH )\" data-type-xml=\"decimal\" step=\"any\"><i class=\"webform-svg-icon\"><svg width=\"16\" height=\"16\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10.815 8.894c.07.244.104.504.104.782 0 .452-.073.84-.22 1.163a3.05 3.05 0 01-.584.862c-.242.252-.517.48-.824.684-.307.204-.616.406-.928.607-.311.2-.614.415-.908.645-.294.23-.553.498-.778.804h4.294V16H4.302c0-.52.076-.97.227-1.354.152-.383.357-.726.617-1.029a5.36 5.36 0 01.914-.836c.35-.256.72-.516 1.11-.78.199-.136.41-.274.635-.415.225-.14.43-.296.617-.466a2.49 2.49 0 00.467-.575 1.41 1.41 0 00.188-.728c0-.434-.128-.773-.383-1.016-.255-.242-.582-.364-.98-.364-.268 0-.495.062-.68.186a1.39 1.39 0 00-.448.485 2.19 2.19 0 00-.24.664 3.746 3.746 0 00-.072.722H4.51a4.229 4.229 0 01.182-1.424 3.3 3.3 0 01.622-1.15 2.818 2.818 0 011.045-.767c.42-.183.901-.274 1.446-.274.416 0 .811.064 1.188.191.148.05.29.11.424.178a3.677 3.677 0 01-.164-1.205h1.752c.009.238.048.466.117.683.069.217.168.404.298.562.13.158.292.283.487.377.194.094.426.14.694.14.415 0 .765-.125 1.05-.376.286-.252.429-.594.429-1.029 0-.34-.067-.6-.201-.78a1.151 1.151 0 00-.513-.389 2.174 2.174 0 00-.68-.14 13.51 13.51 0 00-.708-.02V3.795c.199.017.41.017.636 0 .225-.017.434-.066.629-.147.195-.08.355-.198.48-.351.125-.153.188-.358.188-.613 0-.384-.13-.677-.389-.882a1.406 1.406 0 00-.895-.306c-.467 0-.82.15-1.058.453-.237.303-.352.684-.343 1.144H9.474c.017-.46.102-.88.253-1.259a2.85 2.85 0 01.636-.977 2.82 2.82 0 01.98-.632A3.46 3.46 0 0112.612 0c.364 0 .727.053 1.09.16.364.106.69.266.98.479.29.213.526.472.707.779.182.307.273.66.273 1.06 0 .435-.106.818-.318 1.15-.212.332-.53.558-.954.677v.026c.502.11.895.349 1.18.715.286.366.429.805.429 1.316 0 .468-.093.886-.279 1.252a2.742 2.742 0 01-.746.92c-.311.247-.67.434-1.077.562-.406.127-.83.191-1.271.191-.51 0-.975-.072-1.395-.217a3.283 3.283 0 01-.417-.176zm-6.69 4.158V4.11H2.66c-.052.34-.16.626-.325.855a1.95 1.95 0 01-.603.556 2.45 2.45 0 01-.804.294 4.428 4.428 0 01-.928.07v1.367h2.283v5.8h1.843z\" fill=\"#000\" fill-rule=\"evenodd\"></path></svg></i><span class=\"or-required-msg active\" lang=\"\" data-i18n=\"constraint.required\">This field is required</span></label><label class=\"question non-select  type-number\"><span lang=\"\" class=\"question-label active\">Average Velocity:</span><input type=\"number\" name=\"/CGNF_Discharge_Form/SUMMARY/AVERAGE_VELOCITY\" data-calculate=\"round( /CGNF_Discharge_Form/SUMMARY/TOTAL_VELOCITY div /CGNF_Discharge_Form/SUMMARY/COUNT_MEASUREMENTS ,2)\" data-type-xml=\"decimal\" step=\"any\" readonly=\"\"><i class=\"webform-svg-icon\"><svg width=\"16\" height=\"16\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10.815 8.894c.07.244.104.504.104.782 0 .452-.073.84-.22 1.163a3.05 3.05 0 01-.584.862c-.242.252-.517.48-.824.684-.307.204-.616.406-.928.607-.311.2-.614.415-.908.645-.294.23-.553.498-.778.804h4.294V16H4.302c0-.52.076-.97.227-1.354.152-.383.357-.726.617-1.029a5.36 5.36 0 01.914-.836c.35-.256.72-.516 1.11-.78.199-.136.41-.274.635-.415.225-.14.43-.296.617-.466a2.49 2.49 0 00.467-.575 1.41 1.41 0 00.188-.728c0-.434-.128-.773-.383-1.016-.255-.242-.582-.364-.98-.364-.268 0-.495.062-.68.186a1.39 1.39 0 00-.448.485 2.19 2.19 0 00-.24.664 3.746 3.746 0 00-.072.722H4.51a4.229 4.229 0 01.182-1.424 3.3 3.3 0 01.622-1.15 2.818 2.818 0 011.045-.767c.42-.183.901-.274 1.446-.274.416 0 .811.064 1.188.191.148.05.29.11.424.178a3.677 3.677 0 01-.164-1.205h1.752c.009.238.048.466.117.683.069.217.168.404.298.562.13.158.292.283.487.377.194.094.426.14.694.14.415 0 .765-.125 1.05-.376.286-.252.429-.594.429-1.029 0-.34-.067-.6-.201-.78a1.151 1.151 0 00-.513-.389 2.174 2.174 0 00-.68-.14 13.51 13.51 0 00-.708-.02V3.795c.199.017.41.017.636 0 .225-.017.434-.066.629-.147.195-.08.355-.198.48-.351.125-.153.188-.358.188-.613 0-.384-.13-.677-.389-.882a1.406 1.406 0 00-.895-.306c-.467 0-.82.15-1.058.453-.237.303-.352.684-.343 1.144H9.474c.017-.46.102-.88.253-1.259a2.85 2.85 0 01.636-.977 2.82 2.82 0 01.98-.632A3.46 3.46 0 0112.612 0c.364 0 .727.053 1.09.16.364.106.69.266.98.479.29.213.526.472.707.779.182.307.273.66.273 1.06 0 .435-.106.818-.318 1.15-.212.332-.53.558-.954.677v.026c.502.11.895.349 1.18.715.286.366.429.805.429 1.316 0 .468-.093.886-.279 1.252a2.742 2.742 0 01-.746.92c-.311.247-.67.434-1.077.562-.406.127-.83.191-1.271.191-.51 0-.975-.072-1.395-.217a3.283 3.283 0 01-.417-.176zm-6.69 4.158V4.11H2.66c-.052.34-.16.626-.325.855a1.95 1.95 0 01-.603.556 2.45 2.45 0 01-.804.294 4.428 4.428 0 01-.928.07v1.367h2.283v5.8h1.843z\" fill=\"#000\" fill-rule=\"evenodd\"></path></svg></i></label><label class=\"question non-select  type-number\"><span lang=\"\" class=\"question-label active\">Total Discharge:</span><span class=\"required\">*</span><span lang=\"\" class=\"or-hint active\">Enter discharge value from flow meter if not calculated from above.</span><input type=\"number\" name=\"/CGNF_Discharge_Form/SUMMARY/TOTAL_DISCHARGE\" data-required=\"true()\" data-calculate=\"sum( /CGNF_Discharge_Form/MEASUREMENTS/POINT_DISCHARGE )\" data-type-xml=\"decimal\" step=\"any\"><i class=\"webform-svg-icon\"><svg width=\"16\" height=\"16\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10.815 8.894c.07.244.104.504.104.782 0 .452-.073.84-.22 1.163a3.05 3.05 0 01-.584.862c-.242.252-.517.48-.824.684-.307.204-.616.406-.928.607-.311.2-.614.415-.908.645-.294.23-.553.498-.778.804h4.294V16H4.302c0-.52.076-.97.227-1.354.152-.383.357-.726.617-1.029a5.36 5.36 0 01.914-.836c.35-.256.72-.516 1.11-.78.199-.136.41-.274.635-.415.225-.14.43-.296.617-.466a2.49 2.49 0 00.467-.575 1.41 1.41 0 00.188-.728c0-.434-.128-.773-.383-1.016-.255-.242-.582-.364-.98-.364-.268 0-.495.062-.68.186a1.39 1.39 0 00-.448.485 2.19 2.19 0 00-.24.664 3.746 3.746 0 00-.072.722H4.51a4.229 4.229 0 01.182-1.424 3.3 3.3 0 01.622-1.15 2.818 2.818 0 011.045-.767c.42-.183.901-.274 1.446-.274.416 0 .811.064 1.188.191.148.05.29.11.424.178a3.677 3.677 0 01-.164-1.205h1.752c.009.238.048.466.117.683.069.217.168.404.298.562.13.158.292.283.487.377.194.094.426.14.694.14.415 0 .765-.125 1.05-.376.286-.252.429-.594.429-1.029 0-.34-.067-.6-.201-.78a1.151 1.151 0 00-.513-.389 2.174 2.174 0 00-.68-.14 13.51 13.51 0 00-.708-.02V3.795c.199.017.41.017.636 0 .225-.017.434-.066.629-.147.195-.08.355-.198.48-.351.125-.153.188-.358.188-.613 0-.384-.13-.677-.389-.882a1.406 1.406 0 00-.895-.306c-.467 0-.82.15-1.058.453-.237.303-.352.684-.343 1.144H9.474c.017-.46.102-.88.253-1.259a2.85 2.85 0 01.636-.977 2.82 2.82 0 01.98-.632A3.46 3.46 0 0112.612 0c.364 0 .727.053 1.09.16.364.106.69.266.98.479.29.213.526.472.707.779.182.307.273.66.273 1.06 0 .435-.106.818-.318 1.15-.212.332-.53.558-.954.677v.026c.502.11.895.349 1.18.715.286.366.429.805.429 1.316 0 .468-.093.886-.279 1.252a2.742 2.742 0 01-.746.92c-.311.247-.67.434-1.077.562-.406.127-.83.191-1.271.191-.51 0-.975-.072-1.395-.217a3.283 3.283 0 01-.417-.176zm-6.69 4.158V4.11H2.66c-.052.34-.16.626-.325.855a1.95 1.95 0 01-.603.556 2.45 2.45 0 01-.804.294 4.428 4.428 0 01-.928.07v1.367h2.283v5.8h1.843z\" fill=\"#000\" fill-rule=\"evenodd\"></path></svg></i><span class=\"or-required-msg active\" lang=\"\" data-i18n=\"constraint.required\">This field is required</span></label>\n            </section><!--end of group -->\n    <section class=\"or-group or-appearance-compact \" name=\"/CGNF_Discharge_Form/PHOTOS\"><h4><span lang=\"\" class=\"question-label active\">Photos</span></h4><section class=\"or-repeat or-appearance-compact \" name=\"/CGNF_Discharge_Form/PHOTOS\"><label class=\"question non-select or-appearance-multiline or-appearance-predictivetext \"><span lang=\"\" class=\"question-label active\">Photo description (optional):</span><span lang=\"\" class=\"or-hint active\">At a minimum, collect upstream and downstream view photos for each discharge measurement location.</span><textarea name=\"/CGNF_Discharge_Form/PHOTOS/PHOTO_DESCR\" data-type-xml=\"string\"></textarea></label><label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Image</span><input type=\"file\" name=\"/CGNF_Discharge_Form/PHOTOS/IMAGE\" data-type-xml=\"binary\" accept=\"image/*\"></label>\n            </section><div class=\"or-repeat-info\" data-name=\"/CGNF_Discharge_Form/PHOTOS\"></div>\n            </section><!--end of group -->\n  \n<fieldset id=\"or-preload-items\" style=\"display:none;\"><label class=\"calculation non-select \"><input type=\"hidden\" name=\"/CGNF_Discharge_Form/USER_NAME\" data-preload=\"property\" data-preload-params=\"username\" data-type-xml=\"string\"></label><label class=\"calculation non-select \"><input type=\"hidden\" name=\"/CGNF_Discharge_Form/EMAIL\" data-preload=\"property\" data-preload-params=\"email\" data-type-xml=\"string\"></label></fieldset><fieldset id=\"or-calculated-items\" style=\"display:none;\"><label class=\"calculation non-select \"><input type=\"hidden\" name=\"/CGNF_Discharge_Form/METADATA/WDTH_STEP1\" data-calculate=\" /CGNF_Discharge_Form/METADATA/LEW - /CGNF_Discharge_Form/METADATA/REW \" data-type-xml=\"string\"></label><label class=\"calculation non-select \"><input type=\"hidden\" name=\"/CGNF_Discharge_Form/METADATA/WDTH_STEP2\" data-calculate=\"if( /CGNF_Discharge_Form/METADATA/WDTH_STEP1 <0,-1* /CGNF_Discharge_Form/METADATA/WDTH_STEP1 ,  /CGNF_Discharge_Form/METADATA/WDTH_STEP1 )\" data-type-xml=\"string\"></label><label class=\"calculation non-select \"><input type=\"hidden\" name=\"/CGNF_Discharge_Form/MEASUREMENTS/PER_TOTAL_DISCHARGE_CALC\" data-calculate=\"round( /CGNF_Discharge_Form/MEASUREMENTS/POINT_DISCHARGE div /CGNF_Discharge_Form/SUMMARY/TOTAL_DISCHARGE ,2)*100\" data-type-xml=\"string\"></label><label class=\"calculation non-select \"><input type=\"hidden\" name=\"/CGNF_Discharge_Form/SUMMARY/TOTAL_VELOCITY\" data-calculate=\"sum( /CGNF_Discharge_Form/MEASUREMENTS/POINT_VELOCITY )\" data-type-xml=\"string\"></label><label class=\"calculation non-select \"><input type=\"hidden\" name=\"/CGNF_Discharge_Form/SUMMARY/COUNT_MEASUREMENTS\" data-calculate=\"count-non-empty( /CGNF_Discharge_Form/MEASUREMENTS/POINT_VELOCITY )\" data-type-xml=\"string\"></label><label class=\"calculation non-select \"><input type=\"hidden\" name=\"/CGNF_Discharge_Form/meta/instanceID\" data-calculate=\"concat('uuid:', uuid())\" data-type-xml=\"string\"></label><label class=\"calculation non-select \"><input type=\"hidden\" name=\"/CGNF_Discharge_Form/meta/instanceName\" data-calculate=\"concat ( /CGNF_Discharge_Form/METADATA/SITE_NAME , &quot; &quot;,  /CGNF_Discharge_Form/METADATA/SURVEY_DATETIME )\" data-type-xml=\"string\"></label></fieldset></form>",
+  "languageMap": {},
+  "model": "<model><instance>\n        <CGNF_Discharge_Form xmlns:esri=\"http://esri.com/xforms\" xmlns:jr=\"http://openrosa.org/javarosa\" xmlns:orx=\"http://openrosa.org/xforms\" xmlns:odk=\"http://www.opendatakit.org/xforms\" id=\"CGNF__DISCHARGE_FORM\">\n          <USER_NAME/>\n          <EMAIL/>\n          <SRV_TYPE>Discharge</SRV_TYPE>\n          <METADATA>\n            <SURVEY_DATETIME/>\n            <PROJ_TYPE/>\n            <PROJ_TYPE_other/>\n            <WETP_VISIT/>\n            <SITE_NAME/>\n            <DISTRICT/>\n            <OBSERVERS/>\n            <FLOW_METER_TYPE>Marsh_McBirney</FLOW_METER_TYPE>\n            <SRV_GPS_LOCAT/>\n            <GPS_ACCURACY/>\n            <GPS_LATDD/>\n            <GPS_LONGDD/>\n            <DATUM>WGS84</DATUM>\n            <LEW/>\n            <REW/>\n            <WDTH_STEP1/>\n            <WDTH_STEP2/>\n            <MEAS_INTERVAL/>\n            <COMMENTS/>\n          </METADATA>\n          <MEASUREMENTS jr:template=\"\">\n            <STATION/>\n            <CELL_WIDTH/>\n            <WATER_DEPTH/>\n            <POINT_VELOCITY/>\n            <POINT_DISCHARGE/>\n            <PER_TOTAL_DISCHARGE_CALC/>\n            <PER_TOTAL_DISCHARGE/>\n            <NOTE/>\n          </MEASUREMENTS>\n          <SUMMARY>\n            <STREAM_WIDTH/>\n            <MAX_DEPTH/>\n            <TOTAL_VELOCITY/>\n            <COUNT_MEASUREMENTS/>\n            <AVERAGE_VELOCITY/>\n            <TOTAL_DISCHARGE/>\n          </SUMMARY>\n          <PHOTOS jr:template=\"\">\n            <PHOTO_DESCR/>\n            <IMAGE/>\n          </PHOTOS>\n          <meta>\n            <instanceID/>\n            <instanceName/>\n          </meta>\n        </CGNF_Discharge_Form>\n      </instance><instance id=\"@geopoint\" >\n        <root xmlns:esri=\"http://esri.com/xforms\" xmlns:jr=\"http://openrosa.org/javarosa\" xmlns:orx=\"http://openrosa.org/xforms\" xmlns:odk=\"http://www.opendatakit.org/xforms\">\n          <item>\n            <name>_</name>\n            <label>_</label>\n          </item>\n        </root>\n      </instance></model>",
+  "success": true,
+  "surveyFormJson": {
+    "footer": {
+      "content": "",
+      "isVisible": true
+    },
+    "header": {
+      "content": "CGNF%20Discharge%20Form",
+      "isVisible": true
+    },
+    "isCreatedByExistingFeatureService": false,
+    "layerName": "CGNF__DISCHARGE_FORM",
+    "portalUrl": "https://www.arcgis.com",
+    "questions": [
+      {
+        "calculation": {
+          "expression": ""
+        },
+        "fieldName": "USER_NAME",
+        "fieldType": "esriFieldTypeString",
+        "id": "/CGNF_Discharge_Form/USER_NAME",
+        "isRequired": false,
+        "label": "USER_NAME",
+        "name": "USER_NAME",
+        "position": 1,
+        "type": "esriQuestionTypeMetadataUsername",
+        "visibility": {
+          "expression": "false()"
+        }
+      },
+      {
+        "calculation": {
+          "expression": ""
+        },
+        "fieldName": "EMAIL",
+        "fieldType": "esriFieldTypeString",
+        "id": "/CGNF_Discharge_Form/EMAIL",
+        "isRequired": false,
+        "label": "EMAIL",
+        "name": "EMAIL",
+        "position": 2,
+        "type": "esriQuestionTypeMetadataEmail",
+        "visibility": {
+          "expression": "false()"
+        }
+      },
+      {
+        "calculation": {
+          "expression": ""
+        },
+        "defaultValue": "Discharge",
+        "fieldName": "SRV_TYPE",
+        "fieldType": "esriFieldTypeString",
+        "id": "/CGNF_Discharge_Form/SRV_TYPE",
+        "isRequired": false,
+        "label": "SRV_TYPE",
+        "name": "SRV_TYPE",
+        "position": 3,
+        "type": "esriQuestionTypeText",
+        "validation": {
+          "inputMask": {
+            "customFormat": "",
+            "isEnabled": false
+          },
+          "valueRange": {
+            "isEnabled": false
+          }
+        },
+        "visibility": {
+          "expression": "false()"
+        }
+      },
+      {
+        "appearance": {
+          "layout": "expanded"
+        },
+        "id": "/CGNF_Discharge_Form/METADATA",
+        "label": "Metadata",
+        "name": "METADATA",
+        "position": 23,
+        "questions": [
+          {
+            "calculation": {
+              "expression": "now()"
+            },
+            "defaultValue": "",
+            "fieldName": "SURVEY_DATETIME",
+            "fieldType": "esriFieldTypeDate",
+            "id": "/CGNF_Discharge_Form/METADATA/SURVEY_DATETIME",
+            "isRequired": true,
+            "label": "Date/time:",
+            "name": "SURVEY_DATETIME",
+            "position": 4,
+            "readOnly": {
+              "expression": "false()"
+            },
+            "type": "esriQuestionTypeDateTime",
+            "validation": {
+              "valueRange": {
+                "isEnabled": false
+              }
+            }
+          },
+          {
+            "appearance": {
+              "layout": "autocomplete"
+            },
+            "calculation": {},
+            "choices": {
+              "items": [
+                {
+                  "label": "Wetted Perimeter",
+                  "position": 0,
+                  "value": "Wetted_Perimeter"
+                },
+                {
+                  "label": "Fish Restoration",
+                  "position": 1,
+                  "value": "Fish_Restoration"
+                },
+                {
+                  "label": "Structure Design",
+                  "position": 2,
+                  "value": "Structure_Design"
+                },
+                {
+                  "label": "Stream Restoration",
+                  "position": 3,
+                  "value": "Stream_Restoration"
+                },
+                {
+                  "label": "Water Quality",
+                  "position": 4,
+                  "value": "Water_Quality"
+                },
+                {
+                  "label": "Other",
+                  "position": 5,
+                  "value": "other"
+                }
+              ],
+              "other": {
+                "isEnabled": false
+              }
+            },
+            "choicesOrder": {
+              "type": "default"
+            },
+            "fieldName": "PROJ_TYPE",
+            "fieldType": "esriFieldTypeString",
+            "id": "/CGNF_Discharge_Form/METADATA/PROJ_TYPE",
+            "isRequired": true,
+            "label": "Project Type:",
+            "name": "PROJ_TYPE",
+            "position": 5,
+            "readOnly": {
+              "expression": "false()"
+            },
+            "type": "esriQuestionTypeSingleChoice"
+          },
+          {
+            "calculation": {
+              "expression": ""
+            },
+            "defaultValue": "",
+            "fieldName": "PROJ_TYPE_other",
+            "fieldType": "esriFieldTypeString",
+            "id": "/CGNF_Discharge_Form/METADATA/PROJ_TYPE_other",
+            "isRequired": false,
+            "label": "Specify other.",
+            "name": "PROJ_TYPE_other",
+            "position": 6,
+            "readOnly": {
+              "expression": "false()"
+            },
+            "type": "esriQuestionTypeText",
+            "validation": {
+              "inputMask": {
+                "customFormat": "",
+                "isEnabled": false
+              },
+              "valueRange": {
+                "isEnabled": false
+              }
+            }
+          },
+          {
+            "appearance": {
+              "layout": "vertical"
+            },
+            "calculation": {},
+            "choices": {
+              "items": [
+                {
+                  "label": "High",
+                  "position": 0,
+                  "value": "High"
+                },
+                {
+                  "label": "Flow",
+                  "position": 1,
+                  "value": "Flow"
+                },
+                {
+                  "label": "Mid",
+                  "position": 2,
+                  "value": "Mid"
+                }
+              ],
+              "other": {
+                "isEnabled": false
+              }
+            },
+            "choicesOrder": {
+              "type": "default"
+            },
+            "fieldName": "WETP_VISIT",
+            "fieldType": "esriFieldTypeString",
+            "id": "/CGNF_Discharge_Form/METADATA/WETP_VISIT",
+            "isRequired": true,
+            "label": "Wetted P Visit:",
+            "name": "WETP_VISIT",
+            "position": 7,
+            "readOnly": {
+              "expression": "false()"
+            },
+            "type": "esriQuestionTypeSingleChoice"
+          },
+          {
+            "calculation": {
+              "expression": ""
+            },
+            "defaultValue": "",
+            "fieldName": "SITE_NAME",
+            "fieldType": "esriFieldTypeString",
+            "id": "/CGNF_Discharge_Form/METADATA/SITE_NAME",
+            "isRequired": true,
+            "label": "Water Name:",
+            "name": "SITE_NAME",
+            "position": 8,
+            "readOnly": {
+              "expression": "false()"
+            },
+            "type": "esriQuestionTypeText",
+            "validation": {
+              "inputMask": {
+                "customFormat": "",
+                "isEnabled": false
+              },
+              "valueRange": {
+                "isEnabled": false
+              }
+            }
+          },
+          {
+            "appearance": {
+              "layout": "autocomplete"
+            },
+            "calculation": {},
+            "choices": {
+              "items": [
+                {
+                  "label": "Ashland",
+                  "position": 0,
+                  "value": "Ashland"
+                },
+                {
+                  "label": "Beartooth",
+                  "position": 1,
+                  "value": "Beartooth"
+                },
+                {
+                  "label": "Bozeman",
+                  "position": 2,
+                  "value": "Bozeman"
+                },
+                {
+                  "label": "Gardiner",
+                  "position": 3,
+                  "value": "Gardiner"
+                },
+                {
+                  "label": "Hebgen Lake",
+                  "position": 4,
+                  "value": "Hebgen_Lake"
+                },
+                {
+                  "label": "Sioux",
+                  "position": 5,
+                  "value": "Sioux"
+                },
+                {
+                  "label": "Yellowstone",
+                  "position": 6,
+                  "value": "Yellowstone"
+                },
+                {
+                  "label": "NA - Off Forest",
+                  "position": 7,
+                  "value": "NA"
+                }
+              ],
+              "other": {
+                "isEnabled": false
+              }
+            },
+            "choicesOrder": {
+              "type": "default"
+            },
+            "fieldName": "DISTRICT",
+            "fieldType": "esriFieldTypeString",
+            "id": "/CGNF_Discharge_Form/METADATA/DISTRICT",
+            "isRequired": true,
+            "label": "District:",
+            "name": "DISTRICT",
+            "position": 9,
+            "readOnly": {
+              "expression": "false()"
+            },
+            "type": "esriQuestionTypeSingleChoice"
+          },
+          {
+            "calculation": {
+              "expression": ""
+            },
+            "defaultValue": "",
+            "fieldName": "OBSERVERS",
+            "fieldType": "esriFieldTypeString",
+            "id": "/CGNF_Discharge_Form/METADATA/OBSERVERS",
+            "isRequired": true,
+            "label": "Observers:",
+            "name": "OBSERVERS",
+            "position": 10,
+            "readOnly": {
+              "expression": "false()"
+            },
+            "type": "esriQuestionTypeText",
+            "validation": {
+              "inputMask": {
+                "customFormat": "",
+                "isEnabled": false
+              },
+              "valueRange": {
+                "isEnabled": false
+              }
+            }
+          },
+          {
+            "appearance": {
+              "layout": "autocomplete"
+            },
+            "calculation": {},
+            "choices": {
+              "items": [
+                {
+                  "label": "Marsh McBirney",
+                  "position": 0,
+                  "value": "Marsh_McBirney"
+                },
+                {
+                  "label": "Price AA",
+                  "position": 1,
+                  "value": "Price_AA"
+                },
+                {
+                  "label": "Pygmy",
+                  "position": 2,
+                  "value": "Pygmy"
+                },
+                {
+                  "label": "Swoffer",
+                  "position": 3,
+                  "value": "Swoffer"
+                }
+              ],
+              "other": {
+                "isEnabled": false
+              }
+            },
+            "choicesOrder": {
+              "type": "default"
+            },
+            "defaultValue": "Marsh_McBirney",
+            "fieldName": "FLOW_METER_TYPE",
+            "fieldType": "esriFieldTypeString",
+            "id": "/CGNF_Discharge_Form/METADATA/FLOW_METER_TYPE",
+            "isRequired": true,
+            "label": "Flow Meter Type:",
+            "name": "FLOW_METER_TYPE",
+            "position": 11,
+            "readOnly": {
+              "expression": "false()"
+            },
+            "type": "esriQuestionTypeSingleChoice"
+          },
+          {
+            "calculation": {
+              "expression": ""
+            },
+            "defaultExtent": {
+              "spatialReference": {}
+            },
+            "defaultValue": null,
+            "deviceLocation": {
+              "trigger": "load"
+            },
+            "displayFormats": [
+              "DD"
+            ],
+            "fieldType": "esriFieldTypeGeometry",
+            "id": "/CGNF_Discharge_Form/METADATA/SRV_GPS_LOCAT",
+            "inputTools": [
+              "pin",
+              "search",
+              "locate"
+            ],
+            "isRequired": false,
+            "label": "GPS location:",
+            "maps": [
+              {
+                "name": "undefined",
+                "type": "linkedItem"
+              }
+            ],
+            "name": "SRV_GPS_LOCAT",
+            "position": 12,
+            "readOnly": {
+              "expression": "false()"
+            },
+            "search": {
+              "sources": []
+            },
+            "type": "esriQuestionTypeGeoPoint"
+          },
+          {
+            "calculation": {
+              "expression": "pulldata(\"@geopoint\",  /CGNF_Discharge_Form/METADATA/SRV_GPS_LOCAT , \"horizontalAccuracy\")"
+            },
+            "defaultValue": "",
+            "fieldName": "GPS_ACCURACY",
+            "fieldType": "esriFieldTypeString",
+            "id": "/CGNF_Discharge_Form/METADATA/GPS_ACCURACY",
+            "isRequired": true,
+            "label": "GPS accuracy (m):",
+            "name": "GPS_ACCURACY",
+            "position": 13,
+            "readOnly": {
+              "expression": "true()"
+            },
+            "type": "esriQuestionTypeText",
+            "validation": {
+              "inputMask": {
+                "customFormat": "",
+                "isEnabled": false
+              },
+              "valueRange": {
+                "isEnabled": false
+              }
+            }
+          },
+          {
+            "calculation": {
+              "expression": "pulldata(\"@geopoint\",  /CGNF_Discharge_Form/METADATA/SRV_GPS_LOCAT , \"y\")"
+            },
+            "defaultValue": "",
+            "fieldName": "GPS_LATDD",
+            "fieldType": "esriFieldTypeString",
+            "id": "/CGNF_Discharge_Form/METADATA/GPS_LATDD",
+            "isRequired": true,
+            "label": "Latitude (decimal degrees):",
+            "name": "GPS_LATDD",
+            "position": 14,
+            "readOnly": {
+              "expression": "true()"
+            },
+            "type": "esriQuestionTypeText",
+            "validation": {
+              "inputMask": {
+                "customFormat": "",
+                "isEnabled": false
+              },
+              "valueRange": {
+                "isEnabled": false
+              }
+            }
+          },
+          {
+            "calculation": {
+              "expression": "pulldata(\"@geopoint\",  /CGNF_Discharge_Form/METADATA/SRV_GPS_LOCAT , \"x\")"
+            },
+            "defaultValue": "",
+            "fieldName": "GPS_LONGDD",
+            "fieldType": "esriFieldTypeString",
+            "id": "/CGNF_Discharge_Form/METADATA/GPS_LONGDD",
+            "isRequired": true,
+            "label": "Longitude (decimal degrees):",
+            "name": "GPS_LONGDD",
+            "position": 15,
+            "readOnly": {
+              "expression": "true()"
+            },
+            "type": "esriQuestionTypeText",
+            "validation": {
+              "inputMask": {
+                "customFormat": "",
+                "isEnabled": false
+              },
+              "valueRange": {
+                "isEnabled": false
+              }
+            }
+          },
+          {
+            "calculation": {
+              "expression": ""
+            },
+            "defaultValue": "WGS84",
+            "fieldName": "DATUM",
+            "fieldType": "esriFieldTypeString",
+            "id": "/CGNF_Discharge_Form/METADATA/DATUM",
+            "isRequired": false,
+            "label": "DATUM",
+            "name": "DATUM",
+            "position": 16,
+            "type": "esriQuestionTypeText",
+            "validation": {
+              "inputMask": {
+                "customFormat": "",
+                "isEnabled": false
+              },
+              "valueRange": {
+                "isEnabled": false
+              }
+            },
+            "visibility": {
+              "expression": "false()"
+            }
+          },
+          {
+            "calculation": {
+              "expression": ""
+            },
+            "defaultValue": "",
+            "fieldName": "LEW",
+            "fieldType": "esriFieldTypeDouble",
+            "id": "/CGNF_Discharge_Form/METADATA/LEW",
+            "isRequired": true,
+            "label": "Left Edge of Water:",
+            "name": "LEW",
+            "position": 17,
+            "readOnly": {
+              "expression": "false()"
+            },
+            "type": "esriQuestionTypeNumber",
+            "validation": {
+              "isInteger": false,
+              "valueRange": {
+                "isEnabled": false
+              }
+            }
+          },
+          {
+            "calculation": {
+              "expression": ""
+            },
+            "defaultValue": "",
+            "fieldName": "REW",
+            "fieldType": "esriFieldTypeDouble",
+            "id": "/CGNF_Discharge_Form/METADATA/REW",
+            "isRequired": true,
+            "label": "Right Edge of Water:",
+            "name": "REW",
+            "position": 18,
+            "readOnly": {
+              "expression": "false()"
+            },
+            "type": "esriQuestionTypeNumber",
+            "validation": {
+              "isInteger": false,
+              "valueRange": {
+                "isEnabled": false
+              }
+            }
+          },
+          {
+            "calculation": {
+              "expression": "/CGNF_Discharge_Form/METADATA/LEW - /CGNF_Discharge_Form/METADATA/REW"
+            },
+            "fieldName": "WDTH_STEP1",
+            "fieldType": "esriFieldTypeString",
+            "id": "/CGNF_Discharge_Form/METADATA/WDTH_STEP1",
+            "isRequired": false,
+            "label": "WDTH_STEP1",
+            "name": "WDTH_STEP1",
+            "position": 19,
+            "type": "esriQuestionTypeText",
+            "validation": {
+              "inputMask": {
+                "customFormat": "",
+                "isEnabled": false
+              },
+              "valueRange": {
+                "isEnabled": false
+              }
+            },
+            "visibility": {
+              "expression": "false()"
+            }
+          },
+          {
+            "calculation": {
+              "expression": "if( /CGNF_Discharge_Form/METADATA/WDTH_STEP1 <0,-1* /CGNF_Discharge_Form/METADATA/WDTH_STEP1 ,  /CGNF_Discharge_Form/METADATA/WDTH_STEP1 )"
+            },
+            "fieldName": "WDTH_STEP2",
+            "fieldType": "esriFieldTypeString",
+            "id": "/CGNF_Discharge_Form/METADATA/WDTH_STEP2",
+            "isRequired": false,
+            "label": "WDTH_STEP2",
+            "name": "WDTH_STEP2",
+            "position": 20,
+            "type": "esriQuestionTypeText",
+            "validation": {
+              "inputMask": {
+                "customFormat": "",
+                "isEnabled": false
+              },
+              "valueRange": {
+                "isEnabled": false
+              }
+            },
+            "visibility": {
+              "expression": "false()"
+            }
+          },
+          {
+            "calculation": {
+              "expression": "round( /CGNF_Discharge_Form/SUMMARY/STREAM_WIDTH  div 20, 2)"
+            },
+            "defaultValue": "",
+            "fieldName": "MEAS_INTERVAL",
+            "fieldType": "esriFieldTypeDouble",
+            "id": "/CGNF_Discharge_Form/METADATA/MEAS_INTERVAL",
+            "isRequired": false,
+            "label": "Measurement Interval:",
+            "name": "MEAS_INTERVAL",
+            "position": 21,
+            "readOnly": {
+              "expression": "false()"
+            },
+            "type": "esriQuestionTypeNumber",
+            "validation": {
+              "isInteger": false,
+              "valueRange": {
+                "isEnabled": false
+              }
+            }
+          },
+          {
+            "calculation": {
+              "expression": ""
+            },
+            "defaultValue": "",
+            "fieldLength": "1000",
+            "fieldName": "COMMENTS",
+            "fieldType": "esriFieldTypeString",
+            "id": "/CGNF_Discharge_Form/METADATA/COMMENTS",
+            "isRequired": false,
+            "label": "Comments:",
+            "name": "COMMENTS",
+            "position": 22,
+            "readOnly": {
+              "expression": "false()"
+            },
+            "type": "esriQuestionTypeText",
+            "validation": {
+              "inputMask": {
+                "customFormat": "",
+                "isEnabled": false
+              },
+              "valueRange": {
+                "isEnabled": false
+              }
+            }
+          }
+        ],
+        "type": "esriQuestionTypeGroup"
+      },
+      {
+        "appearance": {
+          "layout": "compact"
+        },
+        "id": "/CGNF_Discharge_Form/MEASUREMENTS",
+        "isRequired": false,
+        "label": "Discharge Measurements",
+        "name": "MEASUREMENTS",
+        "position": 32,
+        "questions": [
+          {
+            "calculation": {
+              "expression": ""
+            },
+            "defaultValue": "",
+            "fieldName": "STATION",
+            "fieldType": "esriFieldTypeDouble",
+            "id": "/CGNF_Discharge_Form/MEASUREMENTS/STATION",
+            "isRequired": false,
+            "label": "Station:",
+            "name": "STATION",
+            "position": 24,
+            "readOnly": {
+              "expression": "false()"
+            },
+            "type": "esriQuestionTypeNumber",
+            "validation": {
+              "isInteger": false,
+              "valueRange": {
+                "isEnabled": false
+              }
+            }
+          },
+          {
+            "calculation": {
+              "expression": ""
+            },
+            "defaultValue": "",
+            "fieldName": "CELL_WIDTH",
+            "fieldType": "esriFieldTypeDouble",
+            "id": "/CGNF_Discharge_Form/MEASUREMENTS/CELL_WIDTH",
+            "isRequired": false,
+            "label": "Cell Width:",
+            "name": "CELL_WIDTH",
+            "position": 25,
+            "readOnly": {
+              "expression": "false()"
+            },
+            "type": "esriQuestionTypeNumber",
+            "validation": {
+              "isInteger": false,
+              "valueRange": {
+                "isEnabled": false
+              }
+            }
+          },
+          {
+            "calculation": {
+              "expression": ""
+            },
+            "defaultValue": "",
+            "fieldName": "WATER_DEPTH",
+            "fieldType": "esriFieldTypeDouble",
+            "id": "/CGNF_Discharge_Form/MEASUREMENTS/WATER_DEPTH",
+            "isRequired": false,
+            "label": "Depth:",
+            "name": "WATER_DEPTH",
+            "position": 26,
+            "readOnly": {
+              "expression": "false()"
+            },
+            "type": "esriQuestionTypeNumber",
+            "validation": {
+              "isInteger": false,
+              "valueRange": {
+                "isEnabled": false
+              }
+            }
+          },
+          {
+            "calculation": {
+              "expression": ""
+            },
+            "defaultValue": "",
+            "fieldName": "POINT_VELOCITY",
+            "fieldType": "esriFieldTypeDouble",
+            "id": "/CGNF_Discharge_Form/MEASUREMENTS/POINT_VELOCITY",
+            "isRequired": false,
+            "label": "Point Velocity:",
+            "name": "POINT_VELOCITY",
+            "position": 27,
+            "readOnly": {
+              "expression": "false()"
+            },
+            "type": "esriQuestionTypeNumber",
+            "validation": {
+              "isInteger": false,
+              "valueRange": {
+                "isEnabled": false
+              }
+            }
+          },
+          {
+            "calculation": {
+              "expression": "round( /CGNF_Discharge_Form/MEASUREMENTS/CELL_WIDTH * /CGNF_Discharge_Form/MEASUREMENTS/WATER_DEPTH * /CGNF_Discharge_Form/MEASUREMENTS/POINT_VELOCITY ,4)"
+            },
+            "defaultValue": "",
+            "fieldName": "POINT_DISCHARGE",
+            "fieldType": "esriFieldTypeDouble",
+            "id": "/CGNF_Discharge_Form/MEASUREMENTS/POINT_DISCHARGE",
+            "isRequired": false,
+            "label": "Point Discharge: (read only)",
+            "name": "POINT_DISCHARGE",
+            "position": 28,
+            "readOnly": {
+              "expression": "true()"
+            },
+            "type": "esriQuestionTypeNumber",
+            "validation": {
+              "isInteger": false,
+              "valueRange": {
+                "isEnabled": false
+              }
+            }
+          },
+          {
+            "calculation": {
+              "expression": "round( /CGNF_Discharge_Form/MEASUREMENTS/POINT_DISCHARGE div /CGNF_Discharge_Form/SUMMARY/TOTAL_DISCHARGE ,2)*100"
+            },
+            "fieldName": "PER_TOTAL_DISCHARGE_CALC",
+            "fieldType": "esriFieldTypeString",
+            "id": "/CGNF_Discharge_Form/MEASUREMENTS/PER_TOTAL_DISCHARGE_CALC",
+            "isRequired": false,
+            "label": "PER_TOTAL_DISCHARGE_CALC",
+            "name": "PER_TOTAL_DISCHARGE_CALC",
+            "position": 29,
+            "type": "esriQuestionTypeText",
+            "validation": {
+              "inputMask": {
+                "customFormat": "",
+                "isEnabled": false
+              },
+              "valueRange": {
+                "isEnabled": false
+              }
+            },
+            "visibility": {
+              "expression": "false()"
+            }
+          },
+          {
+            "calculation": {
+              "expression": "/CGNF_Discharge_Form/MEASUREMENTS/PER_TOTAL_DISCHARGE_CALC"
+            },
+            "defaultValue": "",
+            "fieldName": "PER_TOTAL_DISCHARGE",
+            "fieldType": "esriFieldTypeDouble",
+            "id": "/CGNF_Discharge_Form/MEASUREMENTS/PER_TOTAL_DISCHARGE",
+            "isRequired": false,
+            "label": "Percent of Total Discharge: (read only)",
+            "name": "PER_TOTAL_DISCHARGE",
+            "position": 30,
+            "readOnly": {
+              "expression": "false()"
+            },
+            "type": "esriQuestionTypeNumber",
+            "validation": {
+              "isInteger": true,
+              "valueRange": {
+                "isEnabled": false
+              }
+            }
+          },
+          {
+            "calculation": {
+              "expression": ""
+            },
+            "defaultValue": "",
+            "fieldLength": "500",
+            "fieldName": "NOTE",
+            "fieldType": "esriFieldTypeString",
+            "id": "/CGNF_Discharge_Form/MEASUREMENTS/NOTE",
+            "isRequired": false,
+            "label": "Note:",
+            "name": "NOTE",
+            "position": 31,
+            "readOnly": {
+              "expression": "false()"
+            },
+            "type": "esriQuestionTypeText",
+            "validation": {
+              "inputMask": {
+                "customFormat": "",
+                "isEnabled": false
+              },
+              "valueRange": {
+                "isEnabled": false
+              }
+            }
+          }
+        ],
+        "type": "esriQuestionTypeRepeat",
+        "validation": {
+          "inputCount": {
+            "isEnabled": false,
+            "max": -1,
+            "min": -1
+          }
+        }
+      },
+      {
+        "appearance": {
+          "layout": "expanded"
+        },
+        "id": "/CGNF_Discharge_Form/SUMMARY",
+        "label": "Summary",
+        "name": "SUMMARY",
+        "position": 39,
+        "questions": [
+          {
+            "calculation": {
+              "expression": "round( /CGNF_Discharge_Form/METADATA/WDTH_STEP2 ,2)"
+            },
+            "defaultValue": "",
+            "fieldName": "STREAM_WIDTH",
+            "fieldType": "esriFieldTypeDouble",
+            "id": "/CGNF_Discharge_Form/SUMMARY/STREAM_WIDTH",
+            "isRequired": false,
+            "label": "Stream Width:",
+            "name": "STREAM_WIDTH",
+            "position": 33,
+            "readOnly": {
+              "expression": "true()"
+            },
+            "type": "esriQuestionTypeNumber",
+            "validation": {
+              "isInteger": false,
+              "valueRange": {
+                "isEnabled": false
+              }
+            }
+          },
+          {
+            "calculation": {
+              "expression": "max( /CGNF_Discharge_Form/MEASUREMENTS/WATER_DEPTH )"
+            },
+            "defaultValue": "",
+            "fieldName": "MAX_DEPTH",
+            "fieldType": "esriFieldTypeDouble",
+            "id": "/CGNF_Discharge_Form/SUMMARY/MAX_DEPTH",
+            "isRequired": true,
+            "label": "Max Depth:",
+            "name": "MAX_DEPTH",
+            "position": 34,
+            "readOnly": {
+              "expression": "false()"
+            },
+            "type": "esriQuestionTypeNumber",
+            "validation": {
+              "isInteger": false,
+              "valueRange": {
+                "isEnabled": false
+              }
+            }
+          },
+          {
+            "calculation": {
+              "expression": "sum( /CGNF_Discharge_Form/MEASUREMENTS/POINT_VELOCITY )"
+            },
+            "fieldName": "TOTAL_VELOCITY",
+            "fieldType": "esriFieldTypeString",
+            "id": "/CGNF_Discharge_Form/SUMMARY/TOTAL_VELOCITY",
+            "isRequired": false,
+            "label": "TOTAL_VELOCITY",
+            "name": "TOTAL_VELOCITY",
+            "position": 35,
+            "type": "esriQuestionTypeText",
+            "validation": {
+              "inputMask": {
+                "customFormat": "",
+                "isEnabled": false
+              },
+              "valueRange": {
+                "isEnabled": false
+              }
+            },
+            "visibility": {
+              "expression": "false()"
+            }
+          },
+          {
+            "calculation": {
+              "expression": "count( /CGNF_Discharge_Form/MEASUREMENTS/POINT_VELOCITY )"
+            },
+            "fieldName": "COUNT_MEASUREMENTS",
+            "fieldType": "esriFieldTypeString",
+            "id": "/CGNF_Discharge_Form/SUMMARY/COUNT_MEASUREMENTS",
+            "isRequired": false,
+            "label": "COUNT_MEASUREMENTS",
+            "name": "COUNT_MEASUREMENTS",
+            "position": 36,
+            "type": "esriQuestionTypeText",
+            "validation": {
+              "inputMask": {
+                "customFormat": "",
+                "isEnabled": false
+              },
+              "valueRange": {
+                "isEnabled": false
+              }
+            },
+            "visibility": {
+              "expression": "false()"
+            }
+          },
+          {
+            "calculation": {
+              "expression": "round( /CGNF_Discharge_Form/SUMMARY/TOTAL_VELOCITY div /CGNF_Discharge_Form/SUMMARY/COUNT_MEASUREMENTS ,2)"
+            },
+            "defaultValue": "",
+            "fieldName": "AVERAGE_VELOCITY",
+            "fieldType": "esriFieldTypeDouble",
+            "id": "/CGNF_Discharge_Form/SUMMARY/AVERAGE_VELOCITY",
+            "isRequired": false,
+            "label": "Average Velocity:",
+            "name": "AVERAGE_VELOCITY",
+            "position": 37,
+            "readOnly": {
+              "expression": "true()"
+            },
+            "type": "esriQuestionTypeNumber",
+            "validation": {
+              "isInteger": false,
+              "valueRange": {
+                "isEnabled": false
+              }
+            }
+          },
+          {
+            "calculation": {
+              "expression": "sum( /CGNF_Discharge_Form/MEASUREMENTS/POINT_DISCHARGE )"
+            },
+            "defaultValue": "",
+            "fieldName": "TOTAL_DISCHARGE",
+            "fieldType": "esriFieldTypeDouble",
+            "id": "/CGNF_Discharge_Form/SUMMARY/TOTAL_DISCHARGE",
+            "isRequired": true,
+            "label": "Total Discharge:",
+            "name": "TOTAL_DISCHARGE",
+            "position": 38,
+            "readOnly": {
+              "expression": "false()"
+            },
+            "type": "esriQuestionTypeNumber",
+            "validation": {
+              "isInteger": false,
+              "valueRange": {
+                "isEnabled": false
+              }
+            }
+          }
+        ],
+        "type": "esriQuestionTypeGroup"
+      },
+      {
+        "appearance": {
+          "layout": "compact"
+        },
+        "id": "/CGNF_Discharge_Form/PHOTOS",
+        "isRequired": false,
+        "label": "Photos",
+        "name": "PHOTOS",
+        "position": 42,
+        "questions": [
+          {
+            "calculation": {
+              "expression": ""
+            },
+            "defaultValue": "",
+            "fieldName": "PHOTO_DESCR",
+            "fieldType": "esriFieldTypeString",
+            "id": "/CGNF_Discharge_Form/PHOTOS/PHOTO_DESCR",
+            "isRequired": false,
+            "label": "Photo description (optional):",
+            "name": "PHOTO_DESCR",
+            "position": 40,
+            "readOnly": {
+              "expression": "false()"
+            },
+            "type": "esriQuestionTypeText",
+            "validation": {
+              "inputMask": {
+                "customFormat": "",
+                "isEnabled": false
+              },
+              "valueRange": {
+                "isEnabled": false
+              }
+            }
+          },
+          {
+            "calculation": {},
+            "fieldType": "esriAttachment",
+            "id": "/CGNF_Discharge_Form/PHOTOS/IMAGE",
+            "inputTools": [
+              "browse",
+              "camera"
+            ],
+            "isRequired": false,
+            "label": "Image",
+            "name": "IMAGE",
+            "position": 41,
+            "readOnly": {
+              "expression": "false()"
+            },
+            "type": "esriQuestionTypeImage",
+            "validation": {
+              "allowFileSize": {
+                "max": 10,
+                "min": 0
+              },
+              "allowFileType": {
+                "exts": [
+                  "*"
+                ],
+                "type": "image"
+              },
+              "inputCount": {
+                "isEnabled": true,
+                "max": 1,
+                "min": 1
+              }
+            }
+          }
+        ],
+        "type": "esriQuestionTypeRepeat",
+        "validation": {
+          "inputCount": {
+            "isEnabled": false,
+            "max": -1,
+            "min": -1
+          }
+        }
+      }
+    ],
+    "rules": [],
+    "settings": {
+      "draftInfo": {
+        "isEnabled": false
+      },
+      "instanceName": "concat ( /CGNF_Discharge_Form/METADATA/SITE_NAME , \" \",  /CGNF_Discharge_Form/METADATA/SURVEY_DATETIME )",
+      "isVersionLocked": true,
+      "multiSubmissionInfo": {
+        "maxAllowed": 0,
+        "showSubmitAnotherTip": false
+      },
+      "notificationsInfo": {},
+      "openStatusInfo": {
+        "closedStatusContent": "",
+        "schedule": {
+          "end": null,
+          "start": null
+        },
+        "status": "open"
+      },
+      "recordStartEndTime": {
+        "fieldInfos": [],
+        "isEnabled": false
+      },
+      "thankYouScreenContent": ""
+    },
+    "subHeader": {
+      "content": "",
+      "isVisible": true
+    },
+    "submit": {
+      "buttonText": ""
+    },
+    "themes": [
+      {
+        "form": {
+          "backgroundColor": "#ffffff",
+          "backgroundOpacity": 1,
+          "inputBackgroundColor": "#ffffff",
+          "inputTextColor": "#505050",
+          "primaryColor": "#31872E",
+          "primaryTextColor": "#ffffff",
+          "textColor": "#505050"
+        },
+        "header": {
+          "backgroundColor": "#31872E",
+          "textColor": "#ffffff"
+        },
+        "id": null,
+        "isEnabled": true,
+        "name": "theme-color1",
+        "webpage": {
+          "backgroundColor": "#B7DCC7"
+        }
+      }
+    ],
+    "version": "3.14"
+  },
+  "transformerVersion": "2.1.1"
+}

@@ -1,0 +1,58 @@
+{
+    "access": "org",
+    "accessInformation": null,
+    "advancedSettings": null,
+    "appCategories": [
+    ],
+    "avgRating": 0,
+    "banner": null,
+    "categories": [
+    ],
+    "commentsEnabled": true,
+    "created": 1533930194000,
+    "culture": "en-us",
+    "description": "\n<p style='-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;'><br /></p>",
+    "documentation": null,
+    "extent": [
+    ],
+    "groupDesignations": null,
+    "guid": null,
+    "industries": [
+    ],
+    "isOrgItem": true,
+    "itemControl": "admin",
+    "languages": [
+    ],
+    "largeThumbnail": null,
+    "lastViewed": 1692982800000,
+    "licenseInfo": null,
+    "listed": false,
+    "modified": 1655146121000,
+    "numComments": 0,
+    "numRatings": 0,
+    "numViews": 150,
+    "properties": {
+        "connectVersion": "3.17.55"
+    },
+    "protected": true,
+    "proxyFilter": null,
+    "scoreCompleteness": 56,
+    "screenshots": [
+    ],
+    "size": 62989,
+    "snippet": "Records measurements and calculates discharge collected by point velocity meters using the 6 tenths depth method.",
+    "spatialReference": null,
+    "subInfo": 0,
+    "thumbnail": "thumbnail/CGNF_Discharge_Form.png",
+    "title": "CGNF Discharge Form V2",
+    "tokenExpirationDate": -1,
+    "type": "Form",
+    "typeKeywords": [
+        "Form",
+        "requireUpdate",
+        "Survey123",
+        "Survey123 Connect",
+        "xForm"
+    ],
+    "url": null
+}
