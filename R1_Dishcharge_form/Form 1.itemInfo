@@ -1,5 +1,5 @@
 {
-    "access": "org",
+    "access": "private",
     "accessInformation": null,
     "advancedSettings": null,
     "appCategories": [
@@ -8,15 +8,17 @@
     "banner": null,
     "categories": [
     ],
+    "classification": null,
     "commentsEnabled": true,
-    "created": 1533930194000,
+    "created": 1711035904000,
     "culture": "en-us",
-    "description": "\n<p style='-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;'><br /></p>",
+    "description": "This template includes all XLSForm features supported in ArcGIS Survey123.",
     "documentation": null,
     "extent": [
     ],
     "groupDesignations": null,
     "guid": null,
+    "id": "c7ea3baa38634c10ae9b219fd026fcee",
     "industries": [
     ],
     "isOrgItem": true,
@@ -24,32 +26,38 @@
     "languages": [
     ],
     "largeThumbnail": null,
-    "lastViewed": 1692982800000,
+    "lastViewed": -1,
     "licenseInfo": null,
     "listed": false,
-    "modified": 1655146121000,
+    "modified": 1711035905000,
+    "name": "Form_1.zip",
     "numComments": 0,
     "numRatings": 0,
-    "numViews": 150,
+    "numViews": 0,
+    "orgId": "gGHDlz6USftL5Pau",
+    "owner": "28200407060030926348_usfs",
+    "ownerFolder": "d9e8b87d5a4f4ef4be0d282dfcacede4",
     "properties": {
-        "connectVersion": "3.17.55"
+        "connectVersion": "3.18.124"
     },
-    "protected": true,
+    "protected": false,
     "proxyFilter": null,
-    "scoreCompleteness": 56,
+    "scoreCompleteness": 41,
     "screenshots": [
     ],
-    "size": 62989,
-    "snippet": "Records measurements and calculates discharge collected by point velocity meters using the 6 tenths depth method.",
+    "size": 79089,
+    "snippet": null,
     "spatialReference": null,
     "subInfo": 0,
-    "thumbnail": "thumbnail/CGNF_Discharge_Form.png",
-    "title": "CGNF Discharge Form V2",
-    "tokenExpirationDate": -1,
+    "tags": [
+    ],
+    "thumbnail": "thumbnail/Form_1.png",
+    "title": "R1 Discharge Form",
+    "token1ExpirationDate": -1,
+    "token2ExpirationDate": -1,
     "type": "Form",
     "typeKeywords": [
         "Form",
-        "requireUpdate",
         "Survey123",
         "Survey123 Connect",
         "xForm"

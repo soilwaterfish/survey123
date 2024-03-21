@@ -1,0 +1,36 @@
+{
+    "layers": [
+        {
+            "id": 0,
+            "name": null,
+            "relationships": [
+                {
+                    "cardinality": "esriRelCardinalityOneToMany",
+                    "composite": true,
+                    "id": 1,
+                    "keyField": "globalid",
+                    "name": "Form_1_MEASUREMENTS",
+                    "relatedTableId": 1,
+                    "relatedTableName": null,
+                    "role": "esriRelRoleOrigin"
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "name": null,
+            "relationships": [
+                {
+                    "cardinality": "esriRelCardinalityOneToMany",
+                    "composite": true,
+                    "id": 1,
+                    "keyField": "parentglobalid",
+                    "name": "Form_1_MEASUREMENTS",
+                    "relatedTableId": 0,
+                    "relatedTableName": null,
+                    "role": "esriRelRoleDestination"
+                }
+            ]
+        }
+    ]
+}

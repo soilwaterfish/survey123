@@ -1,0 +1,742 @@
+{
+    "layers": [
+        {
+            "allowGeometryUpdates": true,
+            "capabilities": "Create",
+            "copyrightText": "",
+            "defaultVisibility": true,
+            "description": "",
+            "displayField": "objectid",
+            "drawingInfo": {
+                "labelingInfo": null,
+                "renderer": {
+                    "description": "Survey Data Locations",
+                    "label": "R1 Discharge Form",
+                    "symbol": {
+                        "angle": 0,
+                        "color": [
+                            255,
+                            0,
+                            0,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                255,
+                                255,
+                                0,
+                                255
+                            ],
+                            "width": 1
+                        },
+                        "size": 8,
+                        "style": "esriSMSCircle",
+                        "type": "esriSMS",
+                        "xoffset": 0,
+                        "yoffset": 0
+                    },
+                    "type": "simple"
+                },
+                "transparency": 0
+            },
+            "extent": {
+                "spatialReference": {
+                    "wkid": 4326
+                },
+                "type": "extent",
+                "xmax": 180,
+                "xmin": -180,
+                "ymax": 90,
+                "ymin": -90
+            },
+            "fields": [
+                {
+                    "alias": "ObjectID",
+                    "defaultValue": null,
+                    "domain": null,
+                    "editable": false,
+                    "name": "objectid",
+                    "nullable": false,
+                    "type": "esriFieldTypeOID"
+                },
+                {
+                    "alias": "GlobalID",
+                    "defaultValue": null,
+                    "domain": null,
+                    "editable": false,
+                    "length": 38,
+                    "name": "globalid",
+                    "nullable": false,
+                    "sqlType": "sqlTypeGUID",
+                    "type": "esriFieldTypeGlobalID"
+                },
+                {
+                    "alias": "USER_NAME",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "USER_NAME",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "EMAIL",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "EMAIL",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "SRV_TYPE",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "SRV_TYPE",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Date/time:",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "SURVEY_DATETIME",
+                    "nullable": true,
+                    "type": "esriFieldTypeDate",
+                    "visible": true
+                },
+                {
+                    "alias": "Project Type:",
+                    "domain": {
+                        "codedValues": [
+                            {
+                                "code": "Wetted_Perimeter",
+                                "name": "Wetted Perimeter"
+                            },
+                            {
+                                "code": "Monitoring",
+                                "name": "Monitoring"
+                            },
+                            {
+                                "code": "Fish_Restoration",
+                                "name": "Fish Restoration"
+                            },
+                            {
+                                "code": "Structure_Design",
+                                "name": "Structure Design"
+                            },
+                            {
+                                "code": "Stream_Restoration",
+                                "name": "Stream Restoration"
+                            },
+                            {
+                                "code": "Water_Quality",
+                                "name": "Water Quality"
+                            },
+                            {
+                                "code": "other",
+                                "name": "Other"
+                            }
+                        ],
+                        "name": "cvd_PROJ_TYPE",
+                        "type": "codedValue"
+                    },
+                    "editable": true,
+                    "length": 255,
+                    "name": "PROJ_TYPE",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Specify other.",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "PROJ_TYPE_other",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Wetted P Visit:",
+                    "domain": {
+                        "codedValues": [
+                            {
+                                "code": "High",
+                                "name": "High"
+                            },
+                            {
+                                "code": "Flow",
+                                "name": "Flow"
+                            },
+                            {
+                                "code": "Mid",
+                                "name": "Mid"
+                            }
+                        ],
+                        "name": "cvd_WETP_VISIT",
+                        "type": "codedValue"
+                    },
+                    "editable": true,
+                    "length": 255,
+                    "name": "WETP_VISIT",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Water Name:",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "SITE_NAME",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Forest:",
+                    "domain": {
+                        "codedValues": [
+                            {
+                                "code": "bd",
+                                "name": "Beaverhead-Deerlodge"
+                            },
+                            {
+                                "code": "broot",
+                                "name": "Bitterroot"
+                            },
+                            {
+                                "code": "cg",
+                                "name": "Custer Gallatin"
+                            },
+                            {
+                                "code": "dpg",
+                                "name": "Dakota Prairie Grasslands"
+                            },
+                            {
+                                "code": "flathead",
+                                "name": "Flathead"
+                            },
+                            {
+                                "code": "hlc",
+                                "name": "Helena-Lewis and Clark"
+                            },
+                            {
+                                "code": "idph",
+                                "name": "Idaho Panhandle"
+                            },
+                            {
+                                "code": "kootenai",
+                                "name": "Kootenai"
+                            },
+                            {
+                                "code": "lolo",
+                                "name": "Lolo"
+                            },
+                            {
+                                "code": "npcw",
+                                "name": "Nez Perce-Clearwater"
+                            },
+                            {
+                                "code": "NA",
+                                "name": "NA - Off Forest"
+                            }
+                        ],
+                        "name": "cvd_FOREST",
+                        "type": "codedValue"
+                    },
+                    "editable": true,
+                    "length": 255,
+                    "name": "FOREST",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Observers:",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "OBSERVERS",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Flow Meter Type:",
+                    "domain": {
+                        "codedValues": [
+                            {
+                                "code": "electro_magnetic",
+                                "name": "Electromagnetic (Marsh, HACH, etc)"
+                            },
+                            {
+                                "code": "Price_AA",
+                                "name": "Price AA"
+                            },
+                            {
+                                "code": "Pygmy",
+                                "name": "Pygmy"
+                            },
+                            {
+                                "code": "Swoffer",
+                                "name": "Swoffer"
+                            },
+                            {
+                                "code": "adr",
+                                "name": "Acoustic Doppler Radar"
+                            },
+                            {
+                                "code": "other",
+                                "name": "Other"
+                            },
+                            {
+                                "code": "orange_peel",
+                                "name": "Orange Peel"
+                            }
+                        ],
+                        "name": "cvd_FLOW_METER_TYPE",
+                        "type": "codedValue"
+                    },
+                    "editable": true,
+                    "length": 255,
+                    "name": "FLOW_METER_TYPE",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "GPS accuracy (m):",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "GPS_ACCURACY",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Latitude (decimal degrees):",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "GPS_LATDD",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Longitude (decimal degrees):",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "GPS_LONGDD",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "DATUM",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "DATUM",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Left Edge of Water:",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "LEW",
+                    "nullable": true,
+                    "type": "esriFieldTypeDouble",
+                    "visible": true
+                },
+                {
+                    "alias": "Right Edge of Water:",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "REW",
+                    "nullable": true,
+                    "type": "esriFieldTypeDouble",
+                    "visible": true
+                },
+                {
+                    "alias": "WDTH_STEP1",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "WDTH_STEP1",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "WDTH_STEP2",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "WDTH_STEP2",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Measurement Interval:",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "MEAS_INTERVAL",
+                    "nullable": true,
+                    "type": "esriFieldTypeDouble",
+                    "visible": true
+                },
+                {
+                    "alias": "Comments:",
+                    "domain": null,
+                    "editable": true,
+                    "length": 1000,
+                    "name": "COMMENTS",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Stream Width:",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "STREAM_WIDTH",
+                    "nullable": true,
+                    "type": "esriFieldTypeDouble",
+                    "visible": true
+                },
+                {
+                    "alias": "Max Depth:",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "MAX_DEPTH",
+                    "nullable": true,
+                    "type": "esriFieldTypeDouble",
+                    "visible": true
+                },
+                {
+                    "alias": "TOTAL_AREA",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "TOTAL_AREA",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "COUNT_MEASUREMENTS",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "COUNT_MEASUREMENTS",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Average Velocity:",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "AVERAGE_VELOCITY",
+                    "nullable": true,
+                    "type": "esriFieldTypeDouble",
+                    "visible": true
+                },
+                {
+                    "alias": "Total Discharge:",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "TOTAL_DISCHARGE",
+                    "nullable": true,
+                    "type": "esriFieldTypeDouble",
+                    "visible": true
+                },
+                {
+                    "alias": "Take photos upstream and downstream of the stretched tape at the discharge measurement location.",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "PHOTO_PROTOCOL",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Comments (optional):",
+                    "domain": null,
+                    "editable": true,
+                    "length": 500,
+                    "name": "PHOTO_NOTES",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                }
+            ],
+            "geometryType": "esriGeometryPoint",
+            "globalIdField": "globalid",
+            "hasAttachments": true,
+            "hasM": false,
+            "hasStaticData": false,
+            "hasZ": false,
+            "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+            "id": 0,
+            "indexes": [
+                {
+                    "description": "GlobalID index",
+                    "fields": "globalid",
+                    "isAscending": false,
+                    "isUnique": true,
+                    "name": "GlobalIDIndex"
+                }
+            ],
+            "isDataVersioned": false,
+            "maxRecordCount": 1000,
+            "maxScale": 0,
+            "minScale": 0,
+            "name": "R1__DISCHARGE_FORM",
+            "objectIdField": "objectid",
+            "propagateVisibleFields": true,
+            "relationships": [
+            ],
+            "supportedQueryFormats": "JSON",
+            "supportsAdvancedQueries": true,
+            "supportsRollbackOnFailureParameter": true,
+            "supportsStatistics": true,
+            "templates": [
+                {
+                    "description": "",
+                    "name": "New Feature",
+                    "prototype": {
+                        "attributes": {
+                        }
+                    }
+                }
+            ],
+            "type": "Feature Layer",
+            "typeIdField": "",
+            "types": [
+            ]
+        }
+    ],
+    "tables": [
+        {
+            "capabilities": "Create",
+            "copyrightText": "",
+            "defaultVisibility": true,
+            "description": "",
+            "displayField": "objectid",
+            "editFieldsInfo": null,
+            "fields": [
+                {
+                    "alias": "ObjectID",
+                    "defaultValue": null,
+                    "domain": null,
+                    "editable": false,
+                    "name": "objectid",
+                    "nullable": false,
+                    "type": "esriFieldTypeOID"
+                },
+                {
+                    "alias": "GlobalID",
+                    "defaultValue": null,
+                    "domain": null,
+                    "editable": false,
+                    "length": 38,
+                    "name": "globalid",
+                    "nullable": false,
+                    "sqlType": "sqlTypeGUID",
+                    "type": "esriFieldTypeGlobalID"
+                },
+                {
+                    "alias": "Station:",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "STATION",
+                    "nullable": true,
+                    "type": "esriFieldTypeDouble",
+                    "visible": true
+                },
+                {
+                    "alias": "Cell Width:",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "CELL_WIDTH",
+                    "nullable": true,
+                    "type": "esriFieldTypeDouble",
+                    "visible": true
+                },
+                {
+                    "alias": "Depth:",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "WATER_DEPTH",
+                    "nullable": true,
+                    "type": "esriFieldTypeDouble",
+                    "visible": true
+                },
+                {
+                    "alias": "Point Velocity Type:",
+                    "domain": {
+                        "codedValues": [
+                            {
+                                "code": "point_six",
+                                "name": "0.6 Method"
+                            },
+                            {
+                                "code": "both",
+                                "name": "0.2/0.8 Method"
+                            },
+                            {
+                                "code": "other",
+                                "name": "Other"
+                            }
+                        ],
+                        "name": "cvd_POINT_VELOCITY_TYPE",
+                        "type": "codedValue"
+                    },
+                    "editable": true,
+                    "length": 255,
+                    "name": "POINT_VELOCITY_TYPE",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Specify other.",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "POINT_VELOCITY_TYPE_other",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Point Velocity:",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "POINT_VELOCITY",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Point Discharge: (read only)",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "POINT_DISCHARGE",
+                    "nullable": true,
+                    "type": "esriFieldTypeDouble",
+                    "visible": true
+                },
+                {
+                    "alias": "PER_TOTAL_DISCHARGE_CALC",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "PER_TOTAL_DISCHARGE_CALC",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Percent of Total Discharge: (read only)",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "PER_TOTAL_DISCHARGE",
+                    "nullable": true,
+                    "type": "esriFieldTypeInteger",
+                    "visible": true
+                },
+                {
+                    "alias": "Note:",
+                    "domain": null,
+                    "editable": true,
+                    "length": 500,
+                    "name": "NOTE",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "ParentGlobalID",
+                    "defaultValue": null,
+                    "domain": null,
+                    "editable": true,
+                    "length": 38,
+                    "name": "parentglobalid",
+                    "nullable": true,
+                    "sqlType": "sqlTypeGUID",
+                    "type": "esriFieldTypeGUID"
+                }
+            ],
+            "globalIdField": "globalid",
+            "hasAttachments": false,
+            "htmlPopupType": "esriServerHTMLPopupTypeNone",
+            "id": 1,
+            "indexes": [
+                {
+                    "description": "GlobalID index",
+                    "fields": "globalid",
+                    "isAscending": false,
+                    "isUnique": true,
+                    "name": "GlobalIDIndex"
+                },
+                {
+                    "description": "Child Key Field index",
+                    "fields": "parentglobalid",
+                    "isAscending": false,
+                    "isUnique": false,
+                    "name": "ParentGlobalIDIndex"
+                }
+            ],
+            "isDataVersioned": false,
+            "maxRecordCount": 1000,
+            "name": "MEASUREMENTS",
+            "objectIdField": "objectid",
+            "ownershipBasedAccessControlForFeatures": null,
+            "propagateVisibleFields": true,
+            "relationships": [
+            ],
+            "supportedQueryFormats": "JSON, AMF",
+            "supportsAdvancedQueries": true,
+            "supportsRollbackOnFailureParameter": true,
+            "supportsStatistics": true,
+            "syncCanReturnChanges": false,
+            "templates": [
+            ],
+            "type": "Table",
+            "typeIdField": "",
+            "types": [
+            ],
+            "useStandardizedQueries": true
+        }
+    ]
+}

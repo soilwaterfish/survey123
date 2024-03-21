@@ -7,9 +7,9 @@
             "defaultType": {
             },
             "home": {
-                "latitude": -37.830643,
-                "longitude": 144.96552,
-                "zoomLevel": 9
+                "latitude": 34.056223110283184,
+                "longitude": -117.19532583406398,
+                "zoomLevel": 15
             },
             "includeDefaultMaps": true,
             "preview": {
@@ -22,10 +22,18 @@
         "showMap": true
     },
     "imagesInfo": {
-        "captureResolution": 640
+        "captureResolution": 1280
+    },
+    "locationSharingInfo": {
+        "enabled": true,
+        "required": false
     },
     "overviewInfo": {
         "enabled": false
+    },
+    "publishInfo": {
+        "connectVersion": "3.18.124",
+        "webFormTransform": true
     },
     "queryInfo": {
         "applySpatialFilter": true,
@@ -39,9 +47,5 @@
         "copyEnabled": true,
         "editEnabled": false,
         "enabled": true
-    },
-    "webformInfo": {
-        "themes": [
-        ]
     }
 }
